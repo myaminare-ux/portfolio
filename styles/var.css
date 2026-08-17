@@ -1,0 +1,9 @@
+/* var.css */
+:root {
+    --color-background:#fff;
+
+    --width-desk-v1:1920px;
+    --width-desk-v2:1750px;
+    --width-desk-v3:1680px;
+    --width-desk-v4:1520px;
+}
