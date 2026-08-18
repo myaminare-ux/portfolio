@@ -99,6 +99,8 @@
     width:max-content; 
     border-radius:50px;
     padding:16px 32px;
+    font-size:1.25em;
+    letter-spacing:-0.02em;
 }
 .main_slide .swiper-wrapper .content .list .introduce_btn {}
 .main_slide .swiper-wrapper .content .list .skill_btn {}
@@ -110,15 +112,124 @@
     background-position:center;
     background-repeat:no-repeat;
     width:100%; height:100%;
+    padding:265px 85px 75px 212px;
+    display:flex;
+    flex-flow:row nowrap;
 }
-.main_slide .swiper-wrapper #introduce {}
-.main_slide .swiper-wrapper #introduce .self {}
+.main_slide .swiper-wrapper #introduce .self {
+    width:317px; height:460px;
+    margin-right:127px;
+}
 .main_slide .swiper-wrapper #introduce .self .photo {
     background-color:#f5f5f5;
-    width:250px; width:400px;
+    width:250px; height:400px;
+    /* background-image:url(); */
+    margin:0 auto;
 }
 .main_slide .swiper-wrapper #introduce .self .photo img {
     width:281px; height:90px;
 }
-.main_slide .swiper-wrapper #introduce .self .dsc {}
-.main_slide .swiper-wrapper #introduce .about_me {}
+.main_slide .swiper-wrapper #introduce .self .dsc {
+    line-height:1.4;
+    letter-spacing:-0.02em;
+    text-align:center;
+    margin-top:16px;
+}
+.main_slide .swiper-wrapper #introduce .about_me {
+    width:1180px; height:560px;
+    display:flex;
+    flex-flow:column nowrap;
+}
+/* ------------------------------------------- 3-1. top */
+.main_slide .swiper-wrapper #introduce .about_me .top {
+    display:flex;
+    flex-flow:row nowrap;
+    gap:60px;
+}
+.main_slide .swiper-wrapper #introduce .about_me .top div > h2 {
+    font-family:'Noto Serif KR';
+    font-size:2em;
+    letter-spacing:-0.02em;
+    margin-bottom:30px;
+}
+/* ------------------------------------------- 3-1-1. 인적사항 */
+.main_slide .swiper-wrapper #introduce .about_me .top .self_introduce {
+    width:350px; height:280px;
+}
+.main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about {}
+.main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about * {
+    font-size:1.125em;
+    display:flex;
+    flex-flow:row nowrap;
+    gap:30px;
+}
+.main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about div > h3 {
+    width:100px;
+}
+.main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about div {margin-bottom:14px;}
+/* ------------------------------------------- 3-1-2. 자격증 */
+.main_slide .swiper-wrapper #introduce .about_me .top .license {}
+.main_slide .swiper-wrapper #introduce .about_me .top .license h2 .licen {}
+.main_slide .swiper-wrapper #introduce .about_me .top .license h2 .licen p {
+    font-size:1.125em;
+    display:flex;
+    flex-flow:row nowrap;
+    gap:30px;
+}
+/* ------------------------------------------- 3-3-3. 학교 */
+.main_slide .swiper-wrapper #introduce .about_me .top .education {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education h2 {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu {}
+/* ------------------------------------------- 대학교 */
+.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu .uni {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu .uni .date {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu .uni .date .edu {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu .uni .date .edu span {}
+/* ------------------------------------------- 고등학교 */
+.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu .high {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu .high .date {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu .high .edu {}
+/* ------------------------------------------- 중학교 */
+.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu .middle {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu .middle .date {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu .middle .edu {}
+/* ------------------------------------------- 3-2. btm */
+.main_slide .swiper-wrapper #introduce .about_me .btm {}
+/* ------------------------------------------- 3-2-1. 스킬 */
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill h2 {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill h2 p {}
+/* ------------------------------------------- 3-2-1-1. 개별 디자인 */
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill h2 .figma {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill h2 .html {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill h2 .css {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill h2 .photoshop {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill h2 .illustrator {}
+/* ------------------------------------------- 3-2-2. 훈련 */
+.main_slide .swiper-wrapper #introduce .about_me .btm .job {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job h2 {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training {}
+/* ------------------------------------------- left */
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left {}
+/* ------------------------------------------- 컴퓨터 */
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .computar {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .computar .date {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .computar .title {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .computar .title span {}
+/* ------------------------------------------- 제과 */
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .pastry {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .pastry .date {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .pastry .title {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .pastry .title span {}
+/* ------------------------------------------- right */
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right {}
+/* ------------------------------------------- 디저트 */
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert .date {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert .title {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert .title span {}
+/* ------------------------------------------- 제빵 */
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .baking {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .baking .date {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .baking .title {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .baking .title span {}
