@@ -94,14 +94,15 @@
     padding-top:661px;
     gap:230px;
 }
-.main_slide .swiper-wrapper .content .list * {
+.main_slide .swiper-wrapper .content .list > * {
     background-color:#fff;
     width:max-content; 
     border-radius:50px;
+    padding:16px 32px;
 }
-.main_slide .swiper-wrapper .content .list .introduce_btn {padding:16px 32px;}
-.main_slide .swiper-wrapper .content .list .skill_btn {padding:16px 32px;}
-.main_slide .swiper-wrapper .content .list .project_btn {padding:16px 32px;}
+.main_slide .swiper-wrapper .content .list .introduce_btn {}
+.main_slide .swiper-wrapper .content .list .skill_btn {}
+.main_slide .swiper-wrapper .content .list .project_btn {}
 /* ------------------------------------------- 3행-자기소개 */
 .main_slide .swiper-wrapper #introduce {
     background-image:url(../images/introduce.jpg);
