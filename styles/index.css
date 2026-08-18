@@ -6,40 +6,37 @@
 }
 /* ------------------------------------------- 1행-인트로 */
 .main_slide .swiper-wrapper .intro {
-    
-}
-.main_slide .swiper-wrapper .intro .back_bg {
     background-image:url(../images/intro.jpg);
     background-size:cover;
-    background-position:center buttom;
+    background-position:center;
     background-repeat:no-repeat;
     width:100%; height:100%;
 }
-.main_slide .swiper-wrapper .intro .back_bg img {}
-.main_slide .swiper-wrapper .intro .back_bg img:nth-child(1) {
+.main_slide .swiper-wrapper .intro img {}
+.main_slide .swiper-wrapper .intro img:nth-child(1) {
     width:74px;
     position:absolute;
-    right:625px; top:340px;
+    right:616px; top:318px;
     /* animation:star1V1 10s linear infinite; */
 }
-.main_slide .swiper-wrapper .intro .back_bg img:nth-child(2) {
+.main_slide .swiper-wrapper .intro img:nth-child(2) {
     width:60px;
     position:absolute;
-    left:684px; bottom:266px;
+    left:684px; bottom:305px;
 }
-.main_slide .swiper-wrapper .intro .back_bg img:nth-child(3) {
+.main_slide .swiper-wrapper .intro img:nth-child(3) {
     width:62px;
     position:absolute;
     right:412px; bottom:178px;
     animation:star2 0.4s linear infinite alternate;
 }
-.main_slide .swiper-wrapper .intro .back_bg img:nth-child(4) {
+.main_slide .swiper-wrapper .intro img:nth-child(4) {
     width:66px;
     position:absolute;
     left:333px; top:196px;
     animation:star3 1s linear infinite alternate;
 }
-.main_slide .swiper-wrapper .intro .back_bg img:nth-child(5) {
+.main_slide .swiper-wrapper .intro img:nth-child(5) {
     width:45px;
     position:absolute;
     left:50%; bottom:60px;
@@ -47,49 +44,64 @@
     animation:scroll 1s linear infinite alternate;
 }
 /* ------------------------------------------- 2행-목차 */
-.main_slide .swiper-wrapper .content {}
-.main_slide .swiper-wrapper .content .back_bg {
+.main_slide .swiper-wrapper .content {
     background-image:url(../images/content.jpg);
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
     width:100%; height:100%;
+    
 }
-.main_slide .swiper-wrapper .content .back_bg .deco {}
-.main_slide .swiper-wrapper .content .back_bg .deco img {}
-.main_slide .swiper-wrapper .content .back_bg .deco img:nth-child(1) {
+.main_slide .swiper-wrapper .content .deco {}
+.main_slide .swiper-wrapper .content .deco img {}
+.main_slide .swiper-wrapper .content .deco img:nth-child(1) {
     width:83px; height:216px;
     position:absolute;
     left:348px; top:-53px;
 }
-.main_slide .swiper-wrapper .content .back_bg .deco img:nth-child(2) {
+.main_slide .swiper-wrapper .content .deco img:nth-child(2) {
     width:138px; height:357px;
     position:absolute;
     left:450px; top:0;
 }
-.main_slide .swiper-wrapper .content .back_bg .deco img:nth-child(3) {
+.main_slide .swiper-wrapper .content .deco img:nth-child(3) {
     width:98px; height:255px;
     position:absolute;
     left:546px; top:0;
 }
-.main_slide .swiper-wrapper .content .back_bg .deco img:nth-child(4) {
+.main_slide .swiper-wrapper .content .deco img:nth-child(4) {
     width:59px;
     position:absolute;
     left:941px; top:245px;
-    animation:star2 0.4s linear infinite alternate;
+    animation:star2 1.2s linear infinite alternate;
 }
-.main_slide .swiper-wrapper .content .back_bg .deco img:nth-child(5) {
+.main_slide .swiper-wrapper .content .deco img:nth-child(5) {
     width:59px;
     position:absolute;
     right:653px; bottom:365px;
     animation:star3 1s linear infinite alternate;
 }
-.main_slide .swiper-wrapper .content .back_bg .deco img:nth-child(6) {
+.main_slide .swiper-wrapper .content .deco img:nth-child(6) {
     width:73px;
     position:absolute;
     right:337px; top:304px;
-    animation:star2 0.4s linear infinite alternate;
+    animation:star2 1.2s linear infinite alternate;
 }
+.main_slide .swiper-wrapper .content .list {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    padding-top:661px;
+    gap:230px;
+}
+.main_slide .swiper-wrapper .content .list * {
+    background-color:#fff;
+    width:max-content; 
+    border-radius:50px;
+}
+.main_slide .swiper-wrapper .content .list .introduce_btn {padding:16px 32px;}
+.main_slide .swiper-wrapper .content .list .skill_btn {padding:16px 32px;}
+.main_slide .swiper-wrapper .content .list .project_btn {padding:16px 32px;}
 /* ------------------------------------------- 3행-자기소개 */
 .main_slide .swiper-wrapper #introduce {
     background-image:url(../images/introduce.jpg);
@@ -99,5 +111,14 @@
     width:100%; height:100%;
 
 }
-.main_slide .swiper-wrapper #introduce .back_bg {
+.main_slide .swiper-wrapper #introduce {}
+.main_slide .swiper-wrapper #introduce .self {}
+.main_slide .swiper-wrapper #introduce .self .photo {
+    background-color:#f5f5f5;
+    width:250px; width:400px;
 }
+.main_slide .swiper-wrapper #introduce .self .photo img {
+    width:281px; height:90px;
+}
+.main_slide .swiper-wrapper #introduce .self .dsc {}
+.main_slide .swiper-wrapper #introduce .about_me {}
