@@ -170,6 +170,7 @@
 /* ------------------------------------------- 3-1-2. 자격증 */
 .main_slide .swiper-wrapper #introduce .about_me .top .license {}
 .main_slide .swiper-wrapper #introduce .about_me .top .license h2 .licen {}
+.main_slide .swiper-wrapper #introduce .about_me .top .license h2 .licen * {}
 .main_slide .swiper-wrapper #introduce .about_me .top .license h2 .licen p {
     font-size:1.125em;
     display:flex;
