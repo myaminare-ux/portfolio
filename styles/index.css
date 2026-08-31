@@ -158,7 +158,7 @@
 }
 .main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about {}
 .main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about * {
-    font-size:1.125em;
+    font-size:1.125rem;
     display:flex;
     flex-flow:row nowrap;
     gap:30px;
@@ -169,43 +169,92 @@
 .main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about div {margin-bottom:14px;}
 /* ------------------------------------------- 3-1-2. 자격증 */
 .main_slide .swiper-wrapper #introduce .about_me .top .license {}
-.main_slide .swiper-wrapper #introduce .about_me .top .license h2 .licen {}
-.main_slide .swiper-wrapper #introduce .about_me .top .license h2 .licen * {}
-.main_slide .swiper-wrapper #introduce .about_me .top .license h2 .licen p {
+.main_slide .swiper-wrapper #introduce .about_me .top .license h2 {}
+.main_slide .swiper-wrapper #introduce .about_me .top .license .licen {
+    display:flex;
+    flex-flow: column nowrap;
+    gap:14px;
+}
+.main_slide .swiper-wrapper #introduce .about_me .top .license .licen * {
     font-size:1.125em;
+}
+.main_slide .swiper-wrapper #introduce .about_me .top .license .licen p {}
+/* ------------------------------------------- 3-3-3. 학교 */
+.main_slide .swiper-wrapper #introduce .about_me .top .education {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education h2 {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div {
     display:flex;
     flex-flow:row nowrap;
     gap:30px;
 }
-/* ------------------------------------------- 3-3-3. 학교 */
-.main_slide .swiper-wrapper #introduce .about_me .top .education {}
-.main_slide .swiper-wrapper #introduce .about_me .top .education h2 {}
-.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div p {
+    font-size:1.125em;
+    letter-spacing:-0.02em;
+}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div .date {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div .edu {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div .edu >  span:nth-child(2) {
+    font-size:0.875em;
+    color:#666;
+}
 /* ------------------------------------------- 대학교 */
-.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu .uni {}
-.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu .uni .date {}
-.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu .uni .date .edu {}
-.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu .uni .date .edu span {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .uni {
+    margin-bottom:14px;
+}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .uni .date {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .uni .edu {
+    display:flex;
+    flex-flow:column nowrap;
+    gap:4px;
+}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .uni .edu span {}
 /* ------------------------------------------- 고등학교 */
-.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu .high {}
-.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu .high .date {}
-.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu .high .edu {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .high {
+    margin-bottom:14px;
+}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .high .date {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .high .edu {}
 /* ------------------------------------------- 중학교 */
-.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu .middle {}
-.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu .middle .date {}
-.main_slide .swiper-wrapper #introduce .about_me .top .education h2 .date_edu .middle .edu {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .middle {
+    margin-bottom:14px;
+}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .middle .date {}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .middle .edu {}
 /* ------------------------------------------- 3-2. btm */
-.main_slide .swiper-wrapper #introduce .about_me .btm {}
+.main_slide .swiper-wrapper #introduce .about_me .btm {
+    display:flex;
+    flex-flow:row nowrap;
+    gap:60px;
+}
 /* ------------------------------------------- 3-2-1. 스킬 */
 .main_slide .swiper-wrapper #introduce .about_me .btm .skill {}
 .main_slide .swiper-wrapper #introduce .about_me .btm .skill h2 {}
-.main_slide .swiper-wrapper #introduce .about_me .btm .skill h2 p {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap p {
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:45px; height:45px;
+}
 /* ------------------------------------------- 3-2-1-1. 개별 디자인 */
-.main_slide .swiper-wrapper #introduce .about_me .btm .skill h2 .figma {}
-.main_slide .swiper-wrapper #introduce .about_me .btm .skill h2 .html {}
-.main_slide .swiper-wrapper #introduce .about_me .btm .skill h2 .css {}
-.main_slide .swiper-wrapper #introduce .about_me .btm .skill h2 .photoshop {}
-.main_slide .swiper-wrapper #introduce .about_me .btm .skill h2 .illustrator {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap .figma {
+    background-image:url(../images/figma_icon.svg);
+}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap .html {
+    background-image:url(../images/html_icon.svg);
+}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap .css {
+    background-image:url(../images/css_icon.svg);
+}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap .photoshop {
+    background-image:url(../images/photoshop_icon.svg);
+}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap .illustrator {
+    background-image:url(../images/Illustrator_icon.svg);
+}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap .illustrator {
+    background-image:url(../images/github_icon.svg);
+}
 /* ------------------------------------------- 3-2-2. 훈련 */
 .main_slide .swiper-wrapper #introduce .about_me .btm .job {}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job h2 {}
