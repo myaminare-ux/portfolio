@@ -228,8 +228,18 @@
     gap:60px;
 }
 /* ------------------------------------------- 3-2-1. 스킬 */
-.main_slide .swiper-wrapper #introduce .about_me .btm .skill {}
-.main_slide .swiper-wrapper #introduce .about_me .btm .skill h2 {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill {width:290px;}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill h2 {
+    font-family:'Noto Serif KR';
+    font-size:2em;
+    letter-spacing:-0.02em;
+    margin-bottom:30px;
+}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap {
+    display:flex;
+    flex-flow:row wrap;
+    gap:40px;
+}
 .main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap p {
     background-size:100%;
     background-position:center;
@@ -237,49 +247,80 @@
     width:45px; height:45px;
 }
 /* ------------------------------------------- 3-2-1-1. 개별 디자인 */
-.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap .figma {
-    background-image:url(../images/figma_icon.svg);
-}
-.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap .html {
-    background-image:url(../images/html_icon.svg);
-}
-.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap .css {
-    background-image:url(../images/css_icon.svg);
-}
-.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap .photoshop {
-    background-image:url(../images/photoshop_icon.svg);
-}
-.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap .illustrator {
-    background-image:url(../images/Illustrator_icon.svg);
-}
-.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap .illustrator {
-    background-image:url(../images/github_icon.svg);
-}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap .figma {background-image:url(../images/figma_icon.svg);}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap .html {background-image:url(../images/html_icon.svg);}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap .css {background-image:url(../images/css_icon.svg);}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap .photoshop {background-image:url(../images/photoshop_icon.svg);}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap .illustrator {background-image:url(../images/Illustrator_icon.svg);}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap .github {background-image:url(../images/github_icon.svg);}
 /* ------------------------------------------- 3-2-2. 훈련 */
 .main_slide .swiper-wrapper #introduce .about_me .btm .job {}
-.main_slide .swiper-wrapper #introduce .about_me .btm .job h2 {}
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job h2 {
+    font-family:'Noto Serif KR';
+    font-size:2em;
+    letter-spacing:-0.02em;
+    margin-bottom:30px;
+}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training {
+    display:flex;
+    flex-flow:row nowrap;
+    gap:40px;
+}
 /* ------------------------------------------- left */
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left  div {
+    display:flex;
+    flex-flow:row nowrap;
+    gap:30px;
+    align-items:flex-start;
+}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left  div * {font-size:1.125em; letter-spacing:-0.02em;}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left  div p span:nth-child(2) {font-size:0.875em;}
 /* ------------------------------------------- 컴퓨터 */
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .computar {}
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .computar .date {}
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .computar .title {}
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .computar .title span {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .computar {
+    margin-bottom:14px;
+}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .computar .date {line-height:1.4;}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .computar .title {
+    display:flex;
+    flex-flow:column nowrap;
+    gap:4px;
+}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .computar .title span {width:292px; line-height:1.4;}
 /* ------------------------------------------- 제과 */
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .pastry {}
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .pastry .date {}
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .pastry .title {}
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .pastry .title span {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .pastry .date {line-height:1.4;}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .pastry .title {
+    display:flex;
+    flex-flow:column nowrap;
+    gap:4px;
+}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .pastry .title span {line-height:1.4;}
 /* ------------------------------------------- right */
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right div {
+    display:flex;
+    flex-flow:row nowrap;
+    gap:30px;
+    align-items:flex-start;
+}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right div * {font-size:1.125em; letter-spacing:-0.02em;}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right div p span:nth-child(2) {font-size:0.875em;}
 /* ------------------------------------------- 디저트 */
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert {margin-bottom:14px;}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert .date {}
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert .title {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert .title {
+    display:flex;
+    flex-flow:column nowrap;
+    gap:4px;
+}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert .title span {}
 /* ------------------------------------------- 제빵 */
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .baking {}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .baking .date {}
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .baking .title {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .baking .title {
+    display:flex;
+    flex-flow:column nowrap;
+    gap:4px;
+}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .baking .title span {}
