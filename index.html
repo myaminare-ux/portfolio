@@ -169,12 +169,13 @@
                     </div><!-- e:btm -->
                 </div><!-- e:about_me -->
             </div><!-- e:introduce -->
+            <!-- 4행-스킬&툴 -->
             <div class="swiper-slide" id="skill">
                 <div class="skill_wrap">
                     <dl class="skill figma">
                         <dt>
                             <h3>Figma</h3>
-                            <p class="icon figma"></p>
+                            <p class="icon_figma"></p>
                         </dt>
                         <dd class="summary">UI/UX 설계 및 인터랙티브 프로토타이핑</dd>
                         <dd class="desc">사용자 중심의 반응형 모바일/웹 UI를 설계,<br>오토레이아웃 (Auto Layout)과 컴포넌트화를 활용해<br>효율적인 디자인 시스템 구축 및 프로토타입 제작 가능.</dd>
@@ -182,7 +183,7 @@
                     <dl class="skill html">
                         <dt>
                             <h3>HTML5</h3>
-                            <p class="icon html"></p>
+                            <p class="icon_html"><!-- 아이콘 background-image로 처리 --></p>
                         </dt>
                         <dd class="summary">시맨틱 마크업 및 접근성 고려 구조화</dd>
                         <dd class="desc">검색엔진 최적화(SEO)와 웹 접근성을 고려해 시맨틱 태그<br>기반의 표준화된 문서 구조를 설계, 유지보수가 용이하도록 텍스트와<br>콘텐츠 레이아웃을 작성.</dd>
@@ -190,7 +191,7 @@
                     <dl class="skill css">
                         <dt>
                             <h3>CSS3</h3>
-                            <p class="icon css"></p>
+                            <p class="icon_css"><!-- 아이콘 background-image로 처리 --></p>
                         </dt>
                         <dd class="summary">반응형 웹 구현 및 디테일한 스타일링</dd>
                         <dd class="desc">Flexbox 및 Grid 시스템을 자유롭게 다루어 다양한 디바이스 해상도에<br>최적화된 반응형 레이아웃을 구현, CSS<br>애니메이션을 활용해 직관적인 사용자 경험(UX)을연출.</dd>
@@ -198,7 +199,7 @@
                     <dl class="skill photoshop">
                         <dt>
                             <h3>Photoshop</h3>
-                            <p class="icon photoshop"></p>
+                            <p class="icon_photoshop"><!-- 아이콘 background-image로 처리 --></p>
                         </dt>
                         <dd class="summary">비주얼 보정 및 이미지 합성</dd>
                         <dd class="desc">레이어 마스크와 다양한 필터/효과를 활용하여 고품질의<br>비주얼 콘텐츠를 제작, 웹·모바일 환경에 최적화된 상세페이지 및<br>프로모션 배너 마케팅 이미지를 리터칭.</dd>
@@ -206,18 +207,156 @@
                     <dl class="skill Illustrator">
                         <dt>
                             <h3>Illustrator</h3>
-                            <p class="icon Illustrator"></p>
+                            <p class="icon_Illustrator"><!-- 아이콘 background-image로 처리 --></p>
                         </dt>
                         <dd class="summary">웹/앱 전용 벡터 그래픽 및 아이콘 제작</dd>
                         <dd class="desc">해상도에 영향받지 않는 깨끗한 벡터 기술을 바탕으로 브랜드 로고,<br>웹/앱 전용 아이콘, 캐릭터 및 일러스트 요소를 제작, SVG 형태의<br>웹 최적화 에셋을 추출 가능.</dd>
                     </dl>
+                </div><!-- e:skill_wrap -->
+            </div><!-- e:skill -->
+            <!-- 5행-프로세스 -->
+            <div class="swiper-slide process">
+                <div class="process_title"><!-- 전체 타이틀 -->
+                    <p class="star_img"><!-- 아이콘 background-image로 처리 --></p>
+                    <p class="title">My PROJECT PROCESS</p>
                 </div>
-            </div>
-            <div class="swiper-slide process"></div>
-            <div class="swiper-slide" id="project"></div>
+                <ol class="process_sequence">
+                    <!-- 프로세스 순서 1개 박스 -->
+                    <li>
+                        <p class="num">01.</p>
+                        <div class="info">
+                            <h3>리서치 및 계획하기</h3>
+                            <p>어떤 웹사이트나 앱을 만들지 구상하고, 어떤 메뉴와 내용이 들어갈지 결정합니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="num">02.</p>
+                        <div class="info">
+                            <h3>와이어프레임 및 정보 구조화 하기</h3>
+                            <p>화면의 뼈대와 메뉴 구조를 설계하여, 사용자가 막힘없이 목적까지 이동할 수 있도록 합니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="num">03.</p>
+                        <div class="info">
+                            <h3>UI 디자인 만들기</h3>
+                            <p>색상, 폰트, 이미지, 버튼 디자인을 적용해 완성된 '디자인 화면(시안)'을 만들어냅니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="num">04.</p>
+                        <div class="info">
+                            <h3>마크업 개발하기</h3>
+                            <p>피그마 화면을 보면서 웹 브라우저가 읽을 수 있도록 글자, 이미지, 섹션 등의 HTML 코드 작성합니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="num">05.</p>
+                        <div class="info">
+                            <h3>스타일링 및 동적 구현하기</h3>
+                            <p>CSS로 피그마 디자인과 반응형 화면을 구현하고, JS로 기본 인터랙션(버튼 동작 등)을 더합니다.</p>
+                        </div>
+                    </li>
+                </ol><!-- e:process_sequence -->
+            </div><!-- e:process -->
+            <!-- 6행-프로젝트 목차 -->
+            <div class="swiper-slide" id="project">
+                <div class="proj_title">
+                    <p class="star_img"><!-- 아이콘 background-image로 처리 --></p>
+                    <h3 class="title">MY PROJECT</h3>
+                </div>
+                <P class="announcement">이미지를 클릭하면 해당 프로젝트로 이동합니다.</P>
+                <div class="project_wrap">
+                    <ul class="project_list">
+                        <li>
+                            <a href="#lolly_redesign" class="proj_card card_1">
+                                <p class="arrow_icon"><!-- 아이콘 background-image로 처리 --></p>
+                                <div class="card_info">
+                                    <p class="redesign_num">01.</p>
+                                    <p class="redesign_title">WEB</p>
+                                    <p class="redesign_keyword"># 오롤리데이 | TS트릴리온</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#uiux_design" class="proj_card card_2">
+                                <p class="arrow_icon"><!-- 아이콘 background-image로 처리 --></p>
+                                <div class="card_info">
+                                    <p class="redesign_num">02.</p>
+                                    <p class="redesign_title">UIUX</p>
+                                    <p class="redesign_keyword"># 다이어리</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#graphic" class="proj_card card_3">
+                                <p class="arrow_icon"><!-- 아이콘 background-image로 처리 --></p>
+                                <div class="card_info">
+                                    <p class="redesign_num">03.</p>
+                                    <p class="redesign_title">GRAPHIC</p>
+                                    <p class="redesign_keyword"># 상세페이지 | 광고 배너</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- e:project_wrap -->
+            </div><!-- e:project -->
+            <!-- 7행-오롤리데이 리디자인 -->
+            <div class="swiper-slide" id="lolly_redesign">
+                <p class="lolly_website_img"><img src="#" alt="오, 롤리 데이 브랜드 웹사이트 리디자인 목업 이미지"></p>
+                <div class="lolly_info">
+                    <div class="lolly_header">
+                        <div class="sort_wrap">
+                            <p class="star_img"><!-- 아이콘 background-image로 처리 --></p>
+                            <p class="sort_name">WEB DESIGN</p>
+                        </div>
+                        <div class="lolly_title_wrap">
+                            <h3 class="title">oh, lolly day</h3>
+                            <p class="responsive_icon icon1"><!-- 아이콘 background-image로 처리 --></p>
+                            <p class="responsive_icon icon2"><!-- 아이콘 background-image로 처리 --></p>
+                        </div>
+                        <p class="sub_detail">문구 및 라이프스타일 오롤리데이 브랜드 웹사이트 리디자인</p>
+                    </div><!-- e:lolly_header -->
+                    <div class="date_part">
+                        <dl class="date">
+                            <dt>제작 기간</dt>
+                            <dd>26. 08. 21 ~ 26. 08. 31</dd>
+                        </dl>
+                        <dl class="part">
+                            <dt>기여도</dt>
+                            <dd>개인작업 100%</dd>
+                        </dl>
+                    </div>
+                    <div class="lolly_plan">
+                        <h4>PLAN</h4>
+                        <p class="plan_info">기존 오롤리데이는 원하는 카테고리로 들어가기 위한 뎁스가 많아 유동성에 불편함이 있었습니다. 이를 개선하기 위해 모든 카테고리를 정리하고 사용자가 많이 이동하는 카테고리를 메인 헤더에 넣음으로서 UX 흐름을 간편하게 재설계했습니다.</p>
+                    </div>
+                    <div class="lolly_make_tools">
+                        <h4></h4>
+                        <ul class="tool_list">
+                            <li class="icon_figma">피그마</li>
+                            <li class="icon_html">HTML</li>
+                            <li class="icon_css">CSS</li>
+                        </ul>
+                    </div>
+                    <div class="veiw_link">
+                        <h4></h4>
+                        <ul class="link_wrap">
+                            <li><a href="#" class="btn_link link_plan">프로젝트 기획서</a></li>
+                            <li><a href="https://www.figma.com/proto/2AZ5VNvtbiX4mh1tibmnpp/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2.-%EC%98%A4%EB%A1%A4%EB%A6%AC%EB%8D%B0%EC%9D%B4?node-id=79-548&t=EZEclpgGqxvmGbTe-0&scaling=min-zoom&content-scaling=fixed&page-id=1%3A345&hide-ui=1">피그마-데스크탑 버전 프로토타입</a></li>
+                            <li><a href="https://www.figma.com/proto/2AZ5VNvtbiX4mh1tibmnpp/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2.-%EC%98%A4%EB%A1%A4%EB%A6%AC%EB%8D%B0%EC%9D%B4?node-id=444-1435&t=EZEclpgGqxvmGbTe-0&scaling=min-zoom&content-scaling=fixed&page-id=444%3A534&hide-ui=1">피그마-모바일 버전 프로토타입</a></li>
+                            <li><a href="#">웹 프로토타입</a></li>
+                        </ul>
+                        <a href="https://oh-lolly-day.com/?srsltid=AfmBOopWauCtTMv03cYDXDYZKv2VIlWwI93iB03JgCm1sktZW2rp1sev" class="veiw_original">
+                            <span class="original_link"></span>
+                            <span>원본 사이트 이동</span>
+                        </a>
+                    </div>
+                </div><!-- e:lolly_info -->
+            </div><!-- e:lolly_redesign -->
             <div class="swiper-slide ts_redesign"></div>
-            <div class="swiper-slide"></div>
-            <div class="swiper-slide graphic"></div>
+            <div class="swiper-slide" id="uiux_design"></div>
+            <div class="swiper-slide" id="graphic"></div>
             <div class="swiper-slide Finish"></div>
         </div><!-- swiper-wrapper -->
     </main><!-- e:swiper main-slide -->

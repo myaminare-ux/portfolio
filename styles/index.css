@@ -50,7 +50,6 @@
     background-position:center;
     background-repeat:no-repeat;
     width:100%; height:100%;
-    
 }
 .main_slide .swiper-wrapper .content .deco {}
 .main_slide .swiper-wrapper .content .deco img {}
@@ -88,11 +87,9 @@
     animation:star2 1.2s linear infinite alternate;
 }
 .main_slide .swiper-wrapper .content .list {
-    display:flex;
-    flex-flow:row nowrap;
-    justify-content:center;
+    display:flex; flex-flow:row nowrap;
+    justify-content:center; gap:230px;
     padding-top:661px;
-    gap:230px;
 }
 .main_slide .swiper-wrapper .content .list > * {
     background-color:#fff;
@@ -100,7 +97,6 @@
     border-radius:50px;
     padding:16px 32px;
     font-size:1.25em;
-    letter-spacing:-0.02em;
 }
 .main_slide .swiper-wrapper .content .list .introduce_btn {}
 .main_slide .swiper-wrapper .content .list .skill_btn {}
@@ -113,8 +109,7 @@
     background-repeat:no-repeat;
     width:100%; height:100%;
     padding:265px 85px 75px 212px;
-    display:flex;
-    flex-flow:row nowrap;
+    display:flex; flex-flow:row nowrap;
 }
 .main_slide .swiper-wrapper #introduce .self {
     width:317px; height:460px;
@@ -126,72 +121,43 @@
     /* background-image:url(); */
     margin:0 auto;
 }
-.main_slide .swiper-wrapper #introduce .self .photo img {
-    width:281px; height:90px;
-}
+.main_slide .swiper-wrapper #introduce .self .photo img {width:281px; height:90px;}
 .main_slide .swiper-wrapper #introduce .self .dsc {
-    line-height:1.4;
-    letter-spacing:-0.02em;
-    text-align:center;
+    line-height:1.4; text-align:center;
     margin-top:16px;
 }
 .main_slide .swiper-wrapper #introduce .about_me {
     width:1180px; height:560px;
-    display:flex;
-    flex-flow:column nowrap;
+    display:flex; flex-flow:column nowrap;
 }
 /* ------------------------------------------- 3-1. top */
-.main_slide .swiper-wrapper #introduce .about_me .top {
-    display:flex;
-    flex-flow:row nowrap;
-    gap:60px;
-}
+.main_slide .swiper-wrapper #introduce .about_me .top {display:flex; flex-flow:row nowrap; gap:60px;}
 .main_slide .swiper-wrapper #introduce .about_me .top div > h2 {
     font-family:'Noto Serif KR';
     font-size:2em;
-    letter-spacing:-0.02em;
     margin-bottom:30px;
 }
 /* ------------------------------------------- 3-1-1. 인적사항 */
-.main_slide .swiper-wrapper #introduce .about_me .top .self_introduce {
-    width:350px; height:280px;
-}
+.main_slide .swiper-wrapper #introduce .about_me .top .self_introduce {width:350px; height:280px;}
 .main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about {}
 .main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about * {
     font-size:1.125rem;
-    display:flex;
-    flex-flow:row nowrap;
-    gap:30px;
+    display:flex; flex-flow:row nowrap; gap:30px;
 }
-.main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about div > h3 {
-    width:100px;
-}
+.main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about div > h3 {width:100px;}
 .main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about div {margin-bottom:14px;}
 /* ------------------------------------------- 3-1-2. 자격증 */
 .main_slide .swiper-wrapper #introduce .about_me .top .license {}
 .main_slide .swiper-wrapper #introduce .about_me .top .license h2 {}
-.main_slide .swiper-wrapper #introduce .about_me .top .license .licen {
-    display:flex;
-    flex-flow: column nowrap;
-    gap:14px;
-}
-.main_slide .swiper-wrapper #introduce .about_me .top .license .licen * {
-    font-size:1.125em;
-}
+.main_slide .swiper-wrapper #introduce .about_me .top .license .licen {display:flex; flex-flow: column nowrap; gap:14px;}
+.main_slide .swiper-wrapper #introduce .about_me .top .license .licen * {font-size:1.125em;}
 .main_slide .swiper-wrapper #introduce .about_me .top .license .licen p {}
 /* ------------------------------------------- 3-3-3. 학교 */
 .main_slide .swiper-wrapper #introduce .about_me .top .education {}
 .main_slide .swiper-wrapper #introduce .about_me .top .education h2 {}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu {}
-.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div {
-    display:flex;
-    flex-flow:row nowrap;
-    gap:30px;
-}
-.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div p {
-    font-size:1.125em;
-    letter-spacing:-0.02em;
-}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div {display:flex; flex-flow:row nowrap; gap:30px;}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div p {font-size:1.125em;}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div .date {}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div .edu {}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div .edu >  span:nth-child(2) {
@@ -199,47 +165,28 @@
     color:#666;
 }
 /* ------------------------------------------- 대학교 */
-.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .uni {
-    margin-bottom:14px;
-}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .uni {margin-bottom:14px;}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .uni .date {}
-.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .uni .edu {
-    display:flex;
-    flex-flow:column nowrap;
-    gap:4px;
-}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .uni .edu {display:flex; flex-flow:column nowrap; gap:4px;}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .uni .edu span {}
 /* ------------------------------------------- 고등학교 */
-.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .high {
-    margin-bottom:14px;
-}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .high {margin-bottom:14px;}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .high .date {}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .high .edu {}
 /* ------------------------------------------- 중학교 */
-.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .middle {
-    margin-bottom:14px;
-}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .middle {margin-bottom:14px;}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .middle .date {}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .middle .edu {}
 /* ------------------------------------------- 3-2. btm */
-.main_slide .swiper-wrapper #introduce .about_me .btm {
-    display:flex;
-    flex-flow:row nowrap;
-    gap:60px;
-}
+.main_slide .swiper-wrapper #introduce .about_me .btm {display:flex; flex-flow:row nowrap; gap:60px;}
 /* ------------------------------------------- 3-2-1. 스킬 */
 .main_slide .swiper-wrapper #introduce .about_me .btm .skill {width:290px;}
 .main_slide .swiper-wrapper #introduce .about_me .btm .skill h2 {
     font-family:'Noto Serif KR';
     font-size:2em;
-    letter-spacing:-0.02em;
     margin-bottom:30px;
 }
-.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap {
-    display:flex;
-    flex-flow:row wrap;
-    gap:40px;
-}
+.main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap {display:flex; flex-flow:row wrap; gap:40px;}
 .main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap p {
     background-size:100%;
     background-position:center;
@@ -258,69 +205,215 @@
 .main_slide .swiper-wrapper #introduce .about_me .btm .job h2 {
     font-family:'Noto Serif KR';
     font-size:2em;
-    letter-spacing:-0.02em;
     margin-bottom:30px;
 }
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training {
-    display:flex;
-    flex-flow:row nowrap;
-    gap:40px;
-}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training {display:flex; flex-flow:row nowrap; gap:40px;}
 /* ------------------------------------------- left */
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left {}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left  div {
-    display:flex;
-    flex-flow:row nowrap;
-    gap:30px;
-    align-items:flex-start;
+    display:flex; flex-flow:row nowrap;
+    align-items:flex-start; gap:30px;
 }
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left  div * {font-size:1.125em; letter-spacing:-0.02em;}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left  div * {font-size:1.125em;}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left  div p span:nth-child(2) {font-size:0.875em;}
 /* ------------------------------------------- 컴퓨터 */
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .computar {
-    margin-bottom:14px;
-}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .computar {margin-bottom:14px;}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .computar .date {line-height:1.4;}
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .computar .title {
-    display:flex;
-    flex-flow:column nowrap;
-    gap:4px;
-}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .computar .title {display:flex; flex-flow:column nowrap; gap:4px;}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .computar .title span {width:292px; line-height:1.4;}
 /* ------------------------------------------- 제과 */
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .pastry {}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .pastry .date {line-height:1.4;}
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .pastry .title {
-    display:flex;
-    flex-flow:column nowrap;
-    gap:4px;
-}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .pastry .title {display:flex; flex-flow:column nowrap; gap:4px;}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .pastry .title span {line-height:1.4;}
 /* ------------------------------------------- right */
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right {}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right div {
-    display:flex;
-    flex-flow:row nowrap;
-    gap:30px;
-    align-items:flex-start;
+    display:flex; flex-flow:row nowrap;
+    gap:30px; align-items:flex-start;
 }
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right div * {font-size:1.125em; letter-spacing:-0.02em;}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right div * {font-size:1.125em;}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right div p span:nth-child(2) {font-size:0.875em;}
 /* ------------------------------------------- 디저트 */
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert {margin-bottom:14px;}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert .date {}
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert .title {
-    display:flex;
-    flex-flow:column nowrap;
-    gap:4px;
-}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert .title {display:flex; flex-flow:column nowrap; gap:4px;}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert .title span {}
 /* ------------------------------------------- 제빵 */
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .baking {}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .baking .date {}
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .baking .title {
-    display:flex;
-    flex-flow:column nowrap;
-    gap:4px;
-}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .baking .title {display:flex; flex-flow:column nowrap; gap:4px;}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .baking .title span {}
+/* ------------------------------------------- 4행-스킬&툴 */
+.main_slide .swiper-wrapper #skill {
+    background-image:url(../images/skill_tools_bg.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding:260px 200px 120px;
+}
+.main_slide .swiper-wrapper #skill .skill_wrap {
+    background-color:#fff;
+    padding-top:40px;
+    height:100%;
+    display:flex; flex-flow:row wrap;
+    justify-content:center; gap:30px;
+    /* align-items:center; */
+    border-radius:40px;
+    text-align:center;
+}
+.main_slide .swiper-wrapper #skill .skill_wrap dl {width:360px; height:240px;}
+.main_slide .swiper-wrapper #skill .skill_wrap dl dt {}
+.main_slide .swiper-wrapper #skill .skill_wrap dl dt h3 {
+    font-family:'Noto Serif KR';
+    font-size:1.625em;
+    font-weight:500;
+}
+.main_slide .swiper-wrapper #skill .skill_wrap dl dt p {
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:60px; height:60px;
+    margin:10px auto;
+}
+.main_slide .swiper-wrapper #skill .skill_wrap dl .summary {
+    margin-bottom:10px;
+    line-height:1.1;
+}
+.main_slide .swiper-wrapper #skill .skill_wrap dl .desc {
+    font-size:0.75em;
+    font-weight:300;
+    line-height:1.4;
+}
+/* ------------------------------------------- 4-1. 피그마 */
+.main_slide .swiper-wrapper #skill .skill_wrap .figma dt .icon_figma {background-image:url(../images/figma_icon.svg);}
+/* ------------------------------------------- 4-2. html */
+.main_slide .swiper-wrapper #skill .skill_wrap .html dt .icon_html {background-image:url(../images/html_icon.svg);}
+/* ------------------------------------------- 4-3. css */
+.main_slide .swiper-wrapper #skill .skill_wrap .css dt .icon_css {background-image:url(../images/css_icon.svg);}
+/* ------------------------------------------- 4-4. 포토샵 */
+.main_slide .swiper-wrapper #skill .skill_wrap .photoshop dt .icon_photoshop {background-image:url(../images/photoshop_icon.svg);}
+/* ------------------------------------------- 4-5. 일러스트레이터 */
+.main_slide .swiper-wrapper #skill .skill_wrap .Illustrator dt .icon_Illustrator {background-image:url(../images/Illustrator_icon.svg);}
+/* ------------------------------------------- 5행-프로세스 */
+.main_slide .swiper-wrapper .process {
+    background-image:url(../images/process_bg.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding:426px 120px 230px;
+}
+.main_slide .swiper-wrapper .process .process_title {
+    display:flex; flex-flow:row nowrap;
+    align-items:center; gap:10px;
+    margin-bottom:30px;
+}
+.main_slide .swiper-wrapper .process .process_title .star_img {
+    background-image:url(../images/star3.svg);
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:32px; height:32px;
+}
+.main_slide .swiper-wrapper .process .process_title .title {font-size:1.375em; font-weight:700;}
+.main_slide .swiper-wrapper .process .process_sequence {
+    background-color:#fff;
+    padding:60px;
+    display:flex; flex-flow:row nowrap;
+    border-radius:30px; gap:80px;
+}
+.main_slide .swiper-wrapper .process .process_sequence li {flex:1; display:flex; flex-flow:row nowrap;}
+.main_slide .swiper-wrapper .process .process_sequence li .num {
+    padding-bottom:80px;
+    position:relative;
+    font-size:1.375em; font-weight:600;
+}
+.main_slide .swiper-wrapper .process .process_sequence li .num::after {
+    content:'';
+    display:block;
+    position:absolute;
+    left:50%; transform:translateX(-50%); bottom:-5px;
+    width:3px; height:80px;
+    background-color:#86BCFE;
+}
+.main_slide .swiper-wrapper .process .process_sequence li .info {padding-top:30px;}
+.main_slide .swiper-wrapper .process .process_sequence li .info h3 {
+    padding:0 0 8px 0;
+    font-size:1.125em; font-weight:600;
+    width:max-content;
+}
+.main_slide .swiper-wrapper .process .process_sequence li .info p {font-size:0.875em; line-height:1.2; word-break: keep-all; color:#6E6E6E;}
+/* ------------------------------------------- 5-1. 개별디자인 */
+.main_slide .swiper-wrapper .process .process_sequence li:nth-child(1) .num {color:#86BCFE;}
+.main_slide .swiper-wrapper .process .process_sequence li:nth-child(2) .num {color:#B2D4FF;}
+.main_slide .swiper-wrapper .process .process_sequence li:nth-child(2) .num::after {background-color:#B2D4FF;}
+.main_slide .swiper-wrapper .process .process_sequence li:nth-child(3) .num {color:#E5DDEB;}
+.main_slide .swiper-wrapper .process .process_sequence li:nth-child(3) .num::after {background-color:#E5DDEB;}
+.main_slide .swiper-wrapper .process .process_sequence li:nth-child(4) .num {color:#FCD9DF;}
+.main_slide .swiper-wrapper .process .process_sequence li:nth-child(4) .num::after {background-color:#FCD9DF;}
+.main_slide .swiper-wrapper .process .process_sequence li:nth-child(5) .num {color:#FFB5C2;}
+.main_slide .swiper-wrapper .process .process_sequence li:nth-child(5) .num::after {background-color:#FFB5C2;}
+/* ------------------------------------------- 6행-프로젝트 목차 */
+.main_slide .swiper-wrapper #project {
+    background-image:url(../images/project_contents_bg.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding:101px 200px 141px;
+}
+.main_slide .swiper-wrapper #project .proj_title {
+    margin-bottom:30px;
+    display:flex; flex-flow:row nowrap;
+    align-items:center; gap:10px;
+}
+.main_slide .swiper-wrapper #project .proj_title .star_img {
+    background-image:url(../images/star3.svg);
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:32px; height:32px;
+}
+.main_slide .swiper-wrapper #project .proj_title .title {font-size:1.375em; font-weight:700;}
+.main_slide .swiper-wrapper #project .announcement {text-align:center; margin-bottom:30px;}
+.main_slide .swiper-wrapper #project .project_wrap {}
+.main_slide .swiper-wrapper #project .project_wrap .project_list {display:flex; flex-flow:row nowrap; gap:40px;}
+.main_slide .swiper-wrapper #project .project_wrap .project_list li {width:480px; height:600px;}
+.main_slide .swiper-wrapper #project .project_wrap .project_list li .proj_card {
+    width:100%; height:600px;
+    display:flex; flex-flow:column nowrap;
+    justify-content:flex-end;
+    border-radius:30px;
+    padding:34px 34px 50px;
+    position:relative;
+}
+.main_slide .swiper-wrapper #project .project_wrap .project_list li .proj_card::after {
+    content:'';
+    display:block;
+    width:480px; height:600px;
+    border-radius:30px;
+    position:absolute;
+    left:0; top:0;
+    background-color:rgb(0, 0, 0, 0.3);
+    opacity:1;
+    z-index:10;
+}
+.main_slide .swiper-wrapper #project .project_wrap .project_list li .proj_card:hover::after {opacity:0;}
+.main_slide .swiper-wrapper #project .project_wrap .project_list li .proj_card .arrow_icon {
+    background-image:url(../images/project_contents_go_link.png);
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:56px; height:56px;
+    position:absolute;
+    right:34px; top:34px;
+    z-index:20;
+}
+.main_slide .swiper-wrapper #project .project_wrap .project_list li .proj_card .card_info {z-index:20;}
+.main_slide .swiper-wrapper #project .project_wrap .project_list li .proj_card .card_info .redesign_num {font-family:'Noto Serif KR'; font-size:2.5em; color:#fff; margin-bottom:16px;}
+.main_slide .swiper-wrapper #project .project_wrap .project_list li .proj_card .card_info .redesign_title {font-family:'Noto Serif KR'; font-size:2.25em; color:#fff; margin-bottom:16px;}
+.main_slide .swiper-wrapper #project .project_wrap .project_list li .proj_card .card_info .redesign_keyword {font-size:1.25em; color:#fff;}
+/* ------------------------------------------- 6-1. 개별디자인 */
+.main_slide .swiper-wrapper #project .project_wrap .project_list li .card_1 {background-color: #FFB5C2;}
+.main_slide .swiper-wrapper #project .project_wrap .project_list li .card_2 {background-color: #FFB5C2;}
+.main_slide .swiper-wrapper #project .project_wrap .project_list li .card_3 {background-color: #FFB5C2;}
+/* ------------------------------------------- 7행-오롤리데이 리디자인 */
