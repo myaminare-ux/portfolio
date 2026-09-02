@@ -477,9 +477,31 @@
                     </div>
                 </div><!-- e:diary_info -->
             </div><!-- e:uiux_design -->
-            <div class="swiper-slide" id="graphic"></div>
+            <!-- 10행-상세 페이지, 광고 배너 -->
+            <div class="swiper-slide" id="graphic">
+                <div class="graphic_header">
+                    <div class="graphic_title">
+                        <p class="star_img"><!-- 아이콘 background-image로 처리 --></p>
+                        <p class="sort_name">Graphic Design</p>
+                    </div><!-- e:graphic_title -->
+                    <p class="announcement">이미지를 클릭하면 크게 볼 수 있습니다.</p>
+                </div><!-- e:graphic_header -->
+                <div class="swiper graphic_design">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide design1"><img src="./images/toom_design.jpg" alt="톰 홀랜드 광고 배너" class="js_popup_img"></div>
+                        <div class="swiper-slide design2"><img src="./images/fashion_design.jpg" alt="패션 광고 배너" class="js_popup_img"></div>
+                        <div class="swiper-slide design3"><img src="./images/toom_design.jpg" alt="" class="js_popup_img"></div>
+                        <div class="swiper-slide design4"><img src="./images/fashion_design.jpg" alt="" class="js_popup_img"></div>
+                        <div class="swiper-slide design5"><img src="./images/toom_design.jpg" alt="" class="js_popup_img"></div>
+                    </div><!-- e:swiper-weapper -->
+                </div><!-- e:graphic_design -->
+            </div><!-- e:graphic -->
             <div class="swiper-slide Finish"></div>
         </div><!-- swiper-wrapper -->
     </main><!-- e:swiper main-slide -->
+    <!-- 10행 이미지 클릭 시 크게 나오게 하기 -->
+    <div class="big_img_popup" id="bigImg_popup">
+        <img src="" alt="" class="img_content" id="bigDesign">
+    </div>
 </body>
 </html>

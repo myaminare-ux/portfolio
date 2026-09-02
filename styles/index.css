@@ -631,3 +631,72 @@
 .main_slide .swiper-wrapper #uiux_design .diary_info .diary_plan {}
 .main_slide .swiper-wrapper #uiux_design .diary_info .diary_plan h4 {font-size:1.125em; margin-bottom:6px;}
 .main_slide .swiper-wrapper #uiux_design .diary_info .diary_plan .plan_info {font-size:0.875em; margin-bottom:54px; line-height:1.5; word-break: keep-all;}
+/* ------------------------------------------- 9-2-4. 사용한 툴, 스킬 */
+.main_slide .swiper-wrapper #uiux_design .diary_info .diary_make_tools {}
+.main_slide .swiper-wrapper #uiux_design .diary_info .diary_make_tools h4 {font-size:1.125em; margin-bottom:6px;}
+.main_slide .swiper-wrapper #uiux_design .diary_info .diary_make_tools .tool_list {display:flex; flex-flow:row nowrap; gap:10px; margin-bottom:54px;}
+.main_slide .swiper-wrapper #uiux_design .diary_info .diary_make_tools .tool_list li {
+    display:flex; flex-flow:row nowrap; gap:10px; align-items:center;
+    background-color:#fff;
+    padding:8px 16px;
+    border:1px solid rgb(0, 0, 0, 0.5); border-radius:10px;
+}
+.main_slide .swiper-wrapper #uiux_design .diary_info .diary_make_tools .tool_list li img {width:20px;}
+.main_slide .swiper-wrapper #uiux_design .diary_info .diary_make_tools .tool_list li span {font-size:0.875em;}
+/* ------------------------------------------- 9-2-5. 프로젝트 링크 */
+.main_slide .swiper-wrapper #uiux_design .diary_info .veiw_link {}
+.main_slide .swiper-wrapper #uiux_design .diary_info .veiw_link h4 {font-size:1.125em; margin-bottom:6px;}
+.main_slide .swiper-wrapper #uiux_design .diary_info .veiw_link .link_wrap {display:flex; flex-flow:row wrap; gap:10px; align-items:center; margin-bottom:12px;}
+.main_slide .swiper-wrapper #uiux_design .diary_info .veiw_link .link_wrap li {}
+.main_slide .swiper-wrapper #uiux_design .diary_info .veiw_link .link_wrap li .btn_link {
+    display:flex; align-items:center; gap:10px; padding:14px 20px;
+    background-color:#fff; border:1px solid rgb(0, 0, 0, 0.5); border-radius:10px;
+}
+.main_slide .swiper-wrapper #uiux_design .diary_info .veiw_link .link_wrap li .btn_link img {width:26px;}
+/* ------------------------------------------- 10행-상세 페이지, 광고 배너 */
+.main_slide .swiper-wrapper #graphic {
+    background-color:#F5F9FF;
+    padding:100px 200px 140px;
+}
+/* ------------------------------------------- 10-1. 헤더 */
+.main_slide .swiper-wrapper #graphic .graphic_header {}
+.main_slide .swiper-wrapper #graphic .graphic_header .graphic_title {display:flex; flex-flow:row nowrap; gap:4px; align-items:center; margin-bottom:30px;}
+.main_slide .swiper-wrapper #graphic .graphic_header .graphic_title .star_img {
+    background-image:url(../images/star1.svg);
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:26px; height:26px;
+}
+.main_slide .swiper-wrapper #graphic .graphic_header .graphic_title .sort_name {
+    font-family:'Noto Serif KR';
+    font-size:1.5em;
+}
+.main_slide .swiper-wrapper #graphic .graphic_header .announcement {text-align:center; margin-bottom:30px;}
+/* ------------------------------------------- 10-2. 디자인 이미지 슬라이더 */
+.main_slide .swiper-wrapper #graphic .graphic_design {}
+.main_slide .swiper-wrapper #graphic .graphic_design .swiper-wrapper {}
+.main_slide .swiper-wrapper #graphic .graphic_design .swiper-wrapper .swiper-slide {height:500px; border-radius:30px; overflow:hidden;}
+.main_slide .swiper-wrapper #graphic .graphic_design .swiper-wrapper .swiper-slide img {height:auto; width:100%;}
+/* ------------------------ 슬라이드 개별 디자인 */
+.main_slide .swiper-wrapper #graphic .graphic_design .swiper-wrapper .design1 {background-color:#FFB5C2;}
+.main_slide .swiper-wrapper #graphic .graphic_design .swiper-wrapper .design2 {background-color:#AED6F1;}
+.main_slide .swiper-wrapper #graphic .graphic_design .swiper-wrapper .design3 {background-color:#A9DFBF;}
+.main_slide .swiper-wrapper #graphic .graphic_design .swiper-wrapper .design4 {background-color:#F9E79F;}
+.main_slide .swiper-wrapper #graphic .graphic_design .swiper-wrapper .design5 {background-color:#D7BDE2;}
+/* ------------------------ 이미지 클릭 시 큰 이미지 팝업 등장 */
+.big_img_popup {
+    background-color:rgb(0, 0, 0, 0.5);
+    position:fixed; left:0; top:0;
+    width:100%; height:100vh;
+    z-index:999;
+    justify-content:center; align-items:center;
+    display:none;
+}
+.big_img_popup.active {
+    display:flex;
+}
+.big_img_popup .img_content {
+    max-width:90%; max-height:90%;
+    object-fit:contain;
+}
