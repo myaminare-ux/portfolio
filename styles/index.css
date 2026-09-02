@@ -417,3 +417,217 @@
 .main_slide .swiper-wrapper #project .project_wrap .project_list li .card_2 {background-color: #FFB5C2;}
 .main_slide .swiper-wrapper #project .project_wrap .project_list li .card_3 {background-color: #FFB5C2;}
 /* ------------------------------------------- 7행-오롤리데이 리디자인 */
+.main_slide .swiper-wrapper #lolly_redesign {
+    background-color:#FFEDF0;
+    padding:100px 200px 100px 0;
+    display:flex; flex-flow:row nowrap; gap:100px;
+}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_website_img {
+    background-color:#E0C3EF;
+    width:1097px; height:750px;
+    overflow:hidden;
+    border-radius:0 30px 30px 0;
+}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_website_img img {width:100%;}
+/* ------------------------------------------- 7-1. 오른쪽 오롤리데이 정보 */
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info {width:523px;}
+/* ------------------------------------------- 7-1-1. 헤더 */
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_header {}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_header .sort_wrap {display:flex; flex-flow:row nowrap; gap:4px; align-items:center; margin-bottom:14px;}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_header .sort_wrap .star_img {
+    background-image:url(../images/star1.svg);
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:26px; height:26px;
+}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_header .sort_wrap .sort_name {
+    font-family:'Noto Serif KR';
+    font-size:1.125em;
+}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_header .lolly_title_wrap {display:flex; flex-flow:row nowrap; gap:10px; align-items:center; margin-bottom:14px;}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_header .lolly_title_wrap .title {
+    font-family:'Noto Serif KR';
+    font-size:2em;
+    line-height:1.6;
+}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_header .lolly_title_wrap .responsive_icon {
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:30px; height:30px;
+}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_header .lolly_title_wrap .icon1 {background-image:url(../images/project_desktop.png);}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_header .lolly_title_wrap .icon2 {background-image:url(../images/project_mobile.png);}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_header .sub_detail {font-size:0.875em; margin-bottom:54px;}
+/* ------------------------------------------- 7-1-2. 제작 기간, 기여도 */
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .date_part {display:flex; flex-flow:row nowrap; gap:30px; margin-bottom:54px;}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .date_part dl {}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .date_part dl dt {font-size:1.125em; margin-bottom:6px;}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .date_part dl dd {}
+/* ------------------------------------------- 7-1-3. 제작 계획 */
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_plan {}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_plan h4 {font-size:1.125em; margin-bottom:6px;}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_plan .plan_info {font-size:0.875em; margin-bottom:54px; line-height:1.5; word-break: keep-all;}
+/* ------------------------------------------- 7-1-4. 사용한 툴, 스킬 */
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_make_tools {}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_make_tools h4 {font-size:1.125em; margin-bottom:6px;}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_make_tools .tool_list {display:flex; flex-flow:row nowrap; gap:10px; margin-bottom:54px;}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_make_tools .tool_list li {
+    display:flex; flex-flow:row nowrap; gap:10px; align-items:center;
+    background-color:#fff;
+    padding:8px 16px;
+    border:1px solid rgb(0, 0, 0, 0.5); border-radius:10px;
+}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_make_tools .tool_list li img {width:20px;}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_make_tools .tool_list li span {font-size:0.875em;}
+/* ------------------------------------------- 7-1-5. 프로젝트 링크 */
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .veiw_link {}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .veiw_link h4 {font-size:1.125em; margin-bottom:6px;}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .veiw_link .link_wrap {display:flex; flex-flow:row wrap; gap:10px; align-items:center; margin-bottom:12px;}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .veiw_link .link_wrap li {}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .veiw_link .link_wrap li .btn_link {
+    display:flex; align-items:center; gap:10px; padding:14px 20px;
+    background-color:#fff; border:1px solid rgb(0, 0, 0, 0.5); border-radius:10px;
+}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .veiw_link .link_wrap li .btn_link img {width:26px;}
+/* ----------------- 개별 디자인 */
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .veiw_link .link_wrap li .icon_plan {}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .veiw_link .link_wrap li .icon_figma {}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .veiw_link .link_wrap li .icon_github {}
+/* ----------------- 원본 */
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .veiw_original {display:flex; align-items:center; gap:10px;}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .veiw_original img {width:22px;}
+.main_slide .swiper-wrapper #lolly_redesign .lolly_info .veiw_original span {border-bottom:1px solid #000;}
+/* ------------------------------------------- 8행-TS 트릴리온 리디자인 */
+.main_slide .swiper-wrapper .ts_redesign {
+    background-color:#FFF8F9;
+    padding:100px 0 100px 200px;
+    display:flex; flex-flow:row nowrap; gap:100px;
+}
+/* ------------------------------------------- 8-1. 왼쪽 TS 트릴리온 정보 */
+.main_slide .swiper-wrapper .ts_redesign .ts_info {width:523px;}
+/* ------------------------------------------- 8-1-1. 헤더 */
+.main_slide .swiper-wrapper .ts_redesign .ts_info .ts_header {}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .ts_header .sort_wrap {display:flex; flex-flow:row nowrap; gap:4px; align-items:center; margin-bottom:14px;}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .ts_header .sort_wrap .star_img {
+    background-image:url(../images/star1.svg);
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:26px; height:26px;
+}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .ts_header .sort_wrap .sort_name {
+    font-family:'Noto Serif KR';
+    font-size:1.125em;
+}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .ts_header .ts_title_wrap {display:flex; flex-flow:row nowrap; gap:10px; align-items:center; margin-bottom:14px;}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .ts_header .ts_title_wrap .title {
+    font-family:'Noto Serif KR';
+    font-size:2em;
+    line-height:1.6;
+}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .ts_header .ts_title_wrap .responsive_icon {
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:30px; height:30px;
+}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .ts_header .ts_title_wrap .icon1 {background-image:url(../images/project_desktop.png);}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .ts_header .sub_detail {font-size:0.875em; margin-bottom:54px;}
+/* ------------------------------------------- 8-1-2. 제작 기간, 기여도 */
+.main_slide .swiper-wrapper .ts_redesign .ts_info .date_part {display:flex; flex-flow:row nowrap; gap:30px; margin-bottom:54px;}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .date_part dl {}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .date_part dl dt {font-size:1.125em; margin-bottom:6px;}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .date_part dl dd {}
+/* ------------------------------------------- 8-1-3. 제작 계획 */
+.main_slide .swiper-wrapper .ts_redesign .ts_info .ts_plan {}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .ts_plan h4 {font-size:1.125em; margin-bottom:6px;}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .ts_plan .plan_info {font-size:0.875em; margin-bottom:54px; line-height:1.5; word-break: keep-all;}
+/* ------------------------------------------- 8-1-4. 사용한 툴, 스킬 */
+.main_slide .swiper-wrapper .ts_redesign .ts_info .ts_make_tools {}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .ts_make_tools h4 {font-size:1.125em; margin-bottom:6px;}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .ts_make_tools .tool_list {display:flex; flex-flow:row nowrap; gap:10px; margin-bottom:54px;}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .ts_make_tools .tool_list li {
+    display:flex; flex-flow:row nowrap; gap:10px; align-items:center;
+    background-color:#fff;
+    padding:8px 16px;
+    border:1px solid rgb(0, 0, 0, 0.5); border-radius:10px;
+}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .ts_make_tools .tool_list li img {width:20px;}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .ts_make_tools .tool_list li span {font-size:0.875em;}
+/* ------------------------------------------- 8-1-5. 프로젝트 링크 */
+.main_slide .swiper-wrapper .ts_redesign .ts_info .veiw_link {}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .veiw_link h4 {font-size:1.125em; margin-bottom:6px;}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .veiw_link .link_wrap {display:flex; flex-flow:row wrap; gap:10px; align-items:center; margin-bottom:12px;}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .veiw_link .link_wrap li {}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .veiw_link .link_wrap li .btn_link {
+    display:flex; align-items:center; gap:10px; padding:14px 20px;
+    background-color:#fff; border:1px solid rgb(0, 0, 0, 0.5); border-radius:10px;
+}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .veiw_link .link_wrap li .btn_link img {width:26px;}
+/* ----------------- 원본 */
+.main_slide .swiper-wrapper .ts_redesign .ts_info .veiw_original {display:flex; align-items:center; gap:10px;}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .veiw_original img {width:22px;}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .veiw_original span {border-bottom:1px solid #000;}
+/* ------------------------------------------- 8-2. 오른쪽 TS 트릴리온 리디자인 목업 이미지 */
+.main_slide .swiper-wrapper .ts_redesign .ts_website_img {
+    background-color:#E0C3EF;
+    width:1097px; height:750px;
+    overflow:hidden;
+    border-radius:30px 0 0 30px;
+}
+.main_slide .swiper-wrapper .ts_redesign .ts_website_img img {width:100%;}
+/* ------------------------------------------- 9행-UIUX 디자인 */
+.main_slide .swiper-wrapper #uiux_design {
+    background-color:#F8EAFF;
+    padding:100px 200px 100px 0;
+    display:flex; flex-flow:row nowrap; gap:100px;
+}
+/* ------------------------------------------- 9-1. 왼쪽 UIUX 디자인 목업 이미지 */
+.main_slide .swiper-wrapper #uiux_design .diary_img {
+    background-color:#E0C3EF;
+    width:1097px; height:750px;
+    overflow:hidden;
+    border-radius:0 30px 30px 0;
+}
+.main_slide .swiper-wrapper #uiux_design .diary_img img {width:100%;}
+/* ------------------------------------------- 9-2. 오른쪽 UIUX 디자인 정보 */
+.main_slide .swiper-wrapper #uiux_design .diary_info {width:523px;}
+/* ------------------------------------------- 9-2-1. 헤더 */
+.main_slide .swiper-wrapper #uiux_design .diary_info .diary_header {}
+.main_slide .swiper-wrapper #uiux_design .diary_info .diary_header .sort_wrap {display:flex; flex-flow:row nowrap; gap:4px; align-items:center; margin-bottom:14px;}
+.main_slide .swiper-wrapper #uiux_design .diary_info .diary_header .sort_wrap .star_img {
+    background-image:url(../images/star1.svg);
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:26px; height:26px;
+}
+.main_slide .swiper-wrapper #uiux_design .diary_info .diary_header .sort_wrap .sort_name {
+    font-family:'Noto Serif KR';
+    font-size:1.125em;
+}
+.main_slide .swiper-wrapper #uiux_design .diary_info .diary_header .diary_title_wrap {display:flex; flex-flow:row nowrap; gap:10px; align-items:center; margin-bottom:14px;}
+.main_slide .swiper-wrapper #uiux_design .diary_info .diary_header .diary_title_wrap .title {
+    font-family:'Noto Serif KR';
+    font-size:2em;
+    line-height:1.6;
+}
+.main_slide .swiper-wrapper #uiux_design .diary_info .diary_header .diary_title_wrap .responsive_icon {
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:30px; height:30px;
+}
+.main_slide .swiper-wrapper #uiux_design .diary_info .diary_header .diary_title_wrap .icon2 {background-image:url(../images/project_mobile.png);}
+.main_slide .swiper-wrapper #uiux_design .diary_info .diary_header .sub_detail {font-size:0.875em; margin-bottom:54px;}
+/* ------------------------------------------- 9-2-2. 제작 기간, 기여도 */
+.main_slide .swiper-wrapper #uiux_design .diary_info .date_part {display:flex; flex-flow:row nowrap; gap:30px; margin-bottom:54px;}
+.main_slide .swiper-wrapper #uiux_design .diary_info .date_part dl {}
+.main_slide .swiper-wrapper #uiux_design .diary_info .date_part dl dt {font-size:1.125em; margin-bottom:6px;}
+.main_slide .swiper-wrapper #uiux_design .diary_info .date_part dl dd {}
+/* ------------------------------------------- 9-2-3. 제작 계획 */
+.main_slide .swiper-wrapper #uiux_design .diary_info .diary_plan {}
+.main_slide .swiper-wrapper #uiux_design .diary_info .diary_plan h4 {font-size:1.125em; margin-bottom:6px;}
+.main_slide .swiper-wrapper #uiux_design .diary_info .diary_plan .plan_info {font-size:0.875em; margin-bottom:54px; line-height:1.5; word-break: keep-all;}
