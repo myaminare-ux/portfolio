@@ -160,9 +160,7 @@ html {scroll-behavior:smooth;}
 /* ------------------------------------------- 3-1-1. 인적사항 */
 .main_slide .swiper-wrapper #introduce .about_me .top .self_introduce {width:350px; height:280px;}
 .main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about {}
-.main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about * {
-    display:flex; flex-flow:row nowrap; gap:30px;
-}
+.main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about * {display:flex; flex-flow:row nowrap;}
 .main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about div > h3 {width:100px;}
 .main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about div {margin-bottom:14px;}
 /* ------------------------------------------- 3-1-2. 자격증 */
@@ -178,9 +176,7 @@ html {scroll-behavior:smooth;}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div p {}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div .date {}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div .edu {}
-.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div .edu >  span:nth-child(2) {
-    font-size:0.875em;
-}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div .edu >  span:nth-child(2) {font-size:0.875em;}
 /* ------------------------------------------- 대학교 */
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .uni {margin-bottom:14px;}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .uni .date {}
