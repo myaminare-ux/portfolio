@@ -7,6 +7,7 @@ const mainSlide = new Swiper('.main_slide',{
 });
 
 const subSlide = new Swiper('.graphic_design',{
+    nested:true,
     slidesPerView:3.5,
     spaceBetween:20,
     loop:true,
@@ -34,4 +35,12 @@ bigImgPopup.addEventListener('click', (e) => {
     if (e.target === bigImgPopup) {
         bigImgPopup.classList.remove('active');
     }
+});
+
+// top 버튼 클릭 시 슬라이드 1번으로 이동
+const topBtn = document.querySelector('.top_btn');
+
+topBtn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    mainSlide.slideTo(0,500);
 });

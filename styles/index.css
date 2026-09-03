@@ -1,8 +1,10 @@
 /* index.css */
+html {scroll-behavior:smooth;}
 .main_slide {height:100vh;}
 .main_slide .swiper-wrapper {}
 .main_slide > .swiper-wrapper > .swiper-slide {
-    min-width:var(--width-desk-v1); height:100vh;
+    min-width:var(--width-desk-v1); 
+    height:100vh;
 }
 /* ------------------------------------------- 1행-인트로 */
 .main_slide .swiper-wrapper .intro {
@@ -16,7 +18,7 @@
 .main_slide .swiper-wrapper .intro img:nth-child(1) {
     width:74px;
     position:absolute;
-    right:616px; top:318px;
+    right:673px; top:262px;
     /* animation:star1V1 10s linear infinite; */
 }
 .main_slide .swiper-wrapper .intro img:nth-child(2) {
@@ -51,23 +53,30 @@
     background-repeat:no-repeat;
     width:100%; height:100%;
 }
-.main_slide .swiper-wrapper .content .deco {}
-.main_slide .swiper-wrapper .content .deco img {}
-.main_slide .swiper-wrapper .content .deco img:nth-child(1) {
-    width:83px; height:216px;
+.main_slide .swiper-wrapper .content .deco {position:relative;}
+.main_slide .swiper-wrapper .content .deco span {}
+.main_slide .swiper-wrapper .content .deco span:nth-child(1) {
     position:absolute;
     left:348px; top:-53px;
+    transform-origin:top center;
+    animation:pattern 1.5s linear infinite alternate;
 }
-.main_slide .swiper-wrapper .content .deco img:nth-child(2) {
-    width:138px; height:357px;
+.main_slide .swiper-wrapper .content .deco span:nth-child(2) {
     position:absolute;
     left:450px; top:0;
+    transform-origin:top center;
+    animation:pattern 3.5s linear infinite alternate;
 }
-.main_slide .swiper-wrapper .content .deco img:nth-child(3) {
-    width:98px; height:255px;
+.main_slide .swiper-wrapper .content .deco span:nth-child(3) {
     position:absolute;
     left:546px; top:0;
+    transform-origin:top center;
+    animation:pattern 2.5s linear infinite alternate;
 }
+.main_slide .swiper-wrapper .content .deco span img {}
+.main_slide .swiper-wrapper .content .deco span:nth-child(1) img {width:83px; height:216px;}
+.main_slide .swiper-wrapper .content .deco span:nth-child(2) img {width:138px; height:357px;}
+.main_slide .swiper-wrapper .content .deco span:nth-child(3) img {width:98px; height:255px;}
 .main_slide .swiper-wrapper .content .deco img:nth-child(4) {
     width:59px;
     position:absolute;
@@ -77,7 +86,7 @@
 .main_slide .swiper-wrapper .content .deco img:nth-child(5) {
     width:59px;
     position:absolute;
-    right:653px; bottom:365px;
+    right:653px; top:455px;
     animation:star3 1s linear infinite alternate;
 }
 .main_slide .swiper-wrapper .content .deco img:nth-child(6) {
@@ -97,6 +106,10 @@
     border-radius:50px;
     padding:16px 32px;
     font-size:1.25em;
+    transition:transform 0.5s ease;
+}
+.main_slide .swiper-wrapper .content .list a:hover {
+    transform:scale(1.2);
 }
 .main_slide .swiper-wrapper .content .list .introduce_btn {}
 .main_slide .swiper-wrapper .content .list .skill_btn {}
@@ -294,7 +307,7 @@
 /* ------------------------------------------- 4-4. 포토샵 */
 .main_slide .swiper-wrapper #skill .skill_wrap .photoshop dt .icon_photoshop {background-image:url(../images/photoshop_icon.svg);}
 /* ------------------------------------------- 4-5. 일러스트레이터 */
-.main_slide .swiper-wrapper #skill .skill_wrap .Illustrator dt .icon_Illustrator {background-image:url(../images/Illustrator_icon.svg);}
+.main_slide .swiper-wrapper #skill .skill_wrap .illustrator dt .icon_illustrator {background-image:url(../images/Illustrator_icon.svg);}
 /* ------------------------------------------- 5행-프로세스 */
 .main_slide .swiper-wrapper .process {
     background-image:url(../images/process_bg.jpg);
@@ -359,7 +372,7 @@
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-    padding:101px 200px 141px;
+    padding:120px 200px;
 }
 .main_slide .swiper-wrapper #project .proj_title {
     margin-bottom:30px;
@@ -376,10 +389,10 @@
 .main_slide .swiper-wrapper #project .proj_title .title {font-size:1.375em; font-weight:700;}
 .main_slide .swiper-wrapper #project .announcement {text-align:center; margin-bottom:30px;}
 .main_slide .swiper-wrapper #project .project_wrap {}
-.main_slide .swiper-wrapper #project .project_wrap .project_list {display:flex; flex-flow:row nowrap; gap:40px;}
+.main_slide .swiper-wrapper #project .project_wrap .project_list {display:flex; flex-flow:row nowrap; gap:40px; width:100%;}
 .main_slide .swiper-wrapper #project .project_wrap .project_list li {width:480px; height:600px;}
 .main_slide .swiper-wrapper #project .project_wrap .project_list li .proj_card {
-    width:100%; height:600px;
+    width:100%; height:100%;
     display:flex; flex-flow:column nowrap;
     justify-content:flex-end;
     border-radius:30px;
@@ -389,11 +402,11 @@
 .main_slide .swiper-wrapper #project .project_wrap .project_list li .proj_card::after {
     content:'';
     display:block;
-    width:480px; height:600px;
+    width:100%; height:100%;
     border-radius:30px;
     position:absolute;
     left:0; top:0;
-    background-color:rgb(0, 0, 0, 0.3);
+    background-color:rgba(0, 0, 0, 0.3);
     opacity:1;
     z-index:10;
 }
@@ -699,4 +712,42 @@
 .big_img_popup .img_content {
     max-width:90%; max-height:90%;
     object-fit:contain;
+}
+/* ------------------------------------------- 11행-마무리 */
+.main_slide .swiper-wrapper .finish {
+    background-image:url(../images/Finish_bg.jpg);
+    background-size:cover;
+    background-position:bottom;
+    background-repeat:no-repeat;
+    padding-top:600px;
+    position:relative;
+    display:flex; flex-flow:column nowrap; align-items:center;
+}
+.main_slide .swiper-wrapper .finish .star_img {
+    background-image:url(../images/star1.svg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:92px; height:92px;
+    position:absolute;
+    left:577px; top:190px;
+}
+.main_slide .swiper-wrapper .finish .email_githubLink {text-align:center;}
+.main_slide .swiper-wrapper .finish .email_githubLink .my_email {font-size:2em; margin-bottom:20px;}
+.main_slide .swiper-wrapper .finish .email_githubLink .email_github_btn {display:flex; flex-flow:row nowrap; gap:20px;}
+.main_slide .swiper-wrapper .finish .email_githubLink .email_github_btn a {
+    background-color:#fff;
+    padding:16px 36px;
+    border:1px solid #000; border-radius:14px;
+}
+.main_slide .swiper-wrapper .finish .email_githubLink .email_github_btn .email_btn {}
+.main_slide .swiper-wrapper .finish .email_githubLink .email_github_btn .github_link {}
+/* ------------------------ TOP 버튼 디자인 */
+.top_btn {
+    position:fixed;
+    right:95px; bottom:90px; z-index:999;
+    background-image:url(../images/top_btn.png);
+    background-size:cover;
+    background-position:center;
+    width:50px; height:50px;
 }

@@ -29,7 +29,7 @@
         <div class="swiper-wrapper">
             <!-- 개별 슬라이드 -->
             <!-- 1행-인트로 -->
-            <div class="swiper-slide intro">
+            <div class="swiper-slide intro" id="slide1">
                     <img src="./images/star1.svg" alt="">
                     <img src="./images/star1.svg" alt="">
                     <img src="./images/star2.svg" alt="">
@@ -39,9 +39,9 @@
             <!-- 2행-목차 -->
             <div class="swiper-slide content">
                 <p class="deco">
-                    <img src="./images/pattern1.svg" alt="">
-                    <img src="./images/pattern2.svg" alt="">
-                    <img src="./images/pattern3.svg" alt="">
+                    <span><img src="./images/pattern1.svg" alt=""></span>
+                    <span><img src="./images/pattern2.svg" alt=""></span>
+                    <span><img src="./images/pattern3.svg" alt=""></span>
                     <img src="./images/star1.svg" alt="">
                     <img src="./images/star1.svg" alt="">
                     <img src="./images/star1.svg" alt="">
@@ -204,10 +204,10 @@
                         <dd class="summary">비주얼 보정 및 이미지 합성</dd>
                         <dd class="desc">레이어 마스크와 다양한 필터/효과를 활용하여 고품질의<br>비주얼 콘텐츠를 제작, 웹·모바일 환경에 최적화된 상세페이지 및<br>프로모션 배너 마케팅 이미지를 리터칭.</dd>
                     </dl>
-                    <dl class="skill Illustrator">
+                    <dl class="skill illustrator">
                         <dt>
                             <h3>Illustrator</h3>
-                            <p class="icon_Illustrator"><!-- 아이콘 background-image로 처리 --></p>
+                            <p class="icon_illustrator"><!-- 아이콘 background-image로 처리 --></p>
                         </dt>
                         <dd class="summary">웹/앱 전용 벡터 그래픽 및 아이콘 제작</dd>
                         <dd class="desc">해상도에 영향받지 않는 깨끗한 벡터 기술을 바탕으로 브랜드 로고,<br>웹/앱 전용 아이콘, 캐릭터 및 일러스트 요소를 제작, SVG 형태의<br>웹 최적화 에셋을 추출 가능.</dd>
@@ -265,7 +265,7 @@
                     <p class="star_img"><!-- 아이콘 background-image로 처리 --></p>
                     <h3 class="title">MY PROJECT</h3>
                 </div>
-                <P class="announcement">이미지를 클릭하면 해당 프로젝트로 이동합니다.</P>
+                <p class="announcement">이미지를 클릭하면 해당 프로젝트로 이동합니다.</P>
                 <div class="project_wrap">
                     <ul class="project_list">
                         <li>
@@ -496,12 +496,23 @@
                     </div><!-- e:swiper-weapper -->
                 </div><!-- e:graphic_design -->
             </div><!-- e:graphic -->
-            <div class="swiper-slide Finish"></div>
+            <!-- 11행-마무리 -->
+            <div class="swiper-slide finish">
+                <p class="star_img"><!-- 아이콘 background-image로 처리 --></p>
+                <div class="email_githubLink">
+                    <p class="my_email">irin1616@naver.com</p>
+                    <div class="email_github_btn">
+                        <a href="#" class="email_btn">이메일 보내기</a>
+                        <a href="https://myaminare-ux.github.io/portfolio/" class="github_link">GITHUB 바로가기</a>
+                    </div>
+                </div>
+            </div><!-- e:finish -->
         </div><!-- swiper-wrapper -->
     </main><!-- e:swiper main-slide -->
     <!-- 10행 이미지 클릭 시 크게 나오게 하기 -->
     <div class="big_img_popup" id="bigImg_popup">
         <img src="" alt="" class="img_content" id="bigDesign">
     </div>
+    <a href="#" class="top_btn"><!-- background-image로 처리 --></a>
 </body>
 </html>
