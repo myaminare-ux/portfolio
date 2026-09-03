@@ -18,13 +18,13 @@ html {scroll-behavior:smooth;}
 .main_slide .swiper-wrapper .intro img:nth-child(1) {
     width:74px;
     position:absolute;
-    right:673px; top:262px;
+    right:712px; top:248px;
     /* animation:star1V1 10s linear infinite; */
 }
 .main_slide .swiper-wrapper .intro img:nth-child(2) {
     width:60px;
     position:absolute;
-    left:684px; bottom:305px;
+    left:685px; top:544px;
 }
 .main_slide .swiper-wrapper .intro img:nth-child(3) {
     width:62px;
@@ -131,10 +131,17 @@ html {scroll-behavior:smooth;}
 .main_slide .swiper-wrapper #introduce .self .photo {
     background-color:#f5f5f5;
     width:250px; height:400px;
+    border-radius:40px;
     /* background-image:url(); */
     margin:0 auto;
+    position:relative;
 }
-.main_slide .swiper-wrapper #introduce .self .photo img {width:281px; height:90px;}
+.main_slide .swiper-wrapper #introduce .self .photo img {
+    /* width:281px; height:90px; */
+    width:100%;
+    position:absolute;
+    left:0; bottom:0;
+}
 .main_slide .swiper-wrapper #introduce .self .dsc {
     line-height:1.4; text-align:center;
     margin-top:16px;
@@ -147,35 +154,32 @@ html {scroll-behavior:smooth;}
 .main_slide .swiper-wrapper #introduce .about_me .top {display:flex; flex-flow:row nowrap; gap:60px;}
 .main_slide .swiper-wrapper #introduce .about_me .top div > h2 {
     font-family:'Noto Serif KR';
-    font-size:2em;
+    font-size:1.875em;
     margin-bottom:30px;
 }
 /* ------------------------------------------- 3-1-1. 인적사항 */
 .main_slide .swiper-wrapper #introduce .about_me .top .self_introduce {width:350px; height:280px;}
 .main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about {}
 .main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about * {
-    font-size:1.125rem;
     display:flex; flex-flow:row nowrap; gap:30px;
 }
 .main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about div > h3 {width:100px;}
 .main_slide .swiper-wrapper #introduce .about_me .top .self_introduce .about div {margin-bottom:14px;}
 /* ------------------------------------------- 3-1-2. 자격증 */
-.main_slide .swiper-wrapper #introduce .about_me .top .license {}
+.main_slide .swiper-wrapper #introduce .about_me .top .license {width:280px; height:280px;}
 .main_slide .swiper-wrapper #introduce .about_me .top .license h2 {}
 .main_slide .swiper-wrapper #introduce .about_me .top .license .licen {display:flex; flex-flow: column nowrap; gap:14px;}
-.main_slide .swiper-wrapper #introduce .about_me .top .license .licen * {font-size:1.125em;}
 .main_slide .swiper-wrapper #introduce .about_me .top .license .licen p {}
 /* ------------------------------------------- 3-3-3. 학교 */
 .main_slide .swiper-wrapper #introduce .about_me .top .education {}
 .main_slide .swiper-wrapper #introduce .about_me .top .education h2 {}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu {}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div {display:flex; flex-flow:row nowrap; gap:30px;}
-.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div p {font-size:1.125em;}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div p {}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div .date {}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div .edu {}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div .edu >  span:nth-child(2) {
     font-size:0.875em;
-    color:#666;
 }
 /* ------------------------------------------- 대학교 */
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .uni {margin-bottom:14px;}
@@ -196,7 +200,7 @@ html {scroll-behavior:smooth;}
 .main_slide .swiper-wrapper #introduce .about_me .btm .skill {width:290px;}
 .main_slide .swiper-wrapper #introduce .about_me .btm .skill h2 {
     font-family:'Noto Serif KR';
-    font-size:2em;
+    font-size:1.875em;
     margin-bottom:30px;
 }
 .main_slide .swiper-wrapper #introduce .about_me .btm .skill .icon_wrap {display:flex; flex-flow:row wrap; gap:40px;}
@@ -217,7 +221,7 @@ html {scroll-behavior:smooth;}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job {}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job h2 {
     font-family:'Noto Serif KR';
-    font-size:2em;
+    font-size:1.875em;
     margin-bottom:30px;
 }
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training {display:flex; flex-flow:row nowrap; gap:40px;}
@@ -227,7 +231,6 @@ html {scroll-behavior:smooth;}
     display:flex; flex-flow:row nowrap;
     align-items:flex-start; gap:30px;
 }
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left  div * {font-size:1.125em;}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left  div p span:nth-child(2) {font-size:0.875em;}
 /* ------------------------------------------- 컴퓨터 */
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .computar {margin-bottom:14px;}
@@ -245,7 +248,6 @@ html {scroll-behavior:smooth;}
     display:flex; flex-flow:row nowrap;
     gap:30px; align-items:flex-start;
 }
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right div * {font-size:1.125em;}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right div p span:nth-child(2) {font-size:0.875em;}
 /* ------------------------------------------- 디저트 */
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert {margin-bottom:14px;}
