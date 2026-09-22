@@ -428,7 +428,10 @@ html {scroll-behavior:smooth;}
     /* background-color: #FFB5C2; */ background-image:url(../images/lollyday_mok.jpg);
     background-size:cover; background-position:center; background-repeat:no-repeat;
 }
-.main_slide .swiper-wrapper #project .project_wrap .project_list li .card_2 {background-color: #FFB5C2;}
+.main_slide .swiper-wrapper #project .project_wrap .project_list li .card_2 {
+    /* background-color: #FFB5C2; */ background-image:url(../images/diary_mok.jpg);
+    background-size:cover; background-position:bottom; background-repeat:no-repeat;
+}
 .main_slide .swiper-wrapper #project .project_wrap .project_list li .card_3 {background-color: #FFB5C2;}
 /* ------------------------------------------- 7행-오롤리데이 리디자인 */
 .main_slide .swiper-wrapper #lolly_redesign {
