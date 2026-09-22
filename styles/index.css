@@ -424,7 +424,10 @@ html {scroll-behavior:smooth;}
 .main_slide .swiper-wrapper #project .project_wrap .project_list li .proj_card .card_info .redesign_title {font-family:'Noto Serif KR'; font-size:2.25em; color:#fff; margin-bottom:16px;}
 .main_slide .swiper-wrapper #project .project_wrap .project_list li .proj_card .card_info .redesign_keyword {font-size:1.25em; color:#fff;}
 /* ------------------------------------------- 6-1. 개별디자인 */
-.main_slide .swiper-wrapper #project .project_wrap .project_list li .card_1 {background-color: #FFB5C2;}
+.main_slide .swiper-wrapper #project .project_wrap .project_list li .card_1 {
+    /* background-color: #FFB5C2; */ background-image:url(../images/lollyday_mok.jpg);
+    background-size:cover; background-position:center; background-repeat:no-repeat;
+}
 .main_slide .swiper-wrapper #project .project_wrap .project_list li .card_2 {background-color: #FFB5C2;}
 .main_slide .swiper-wrapper #project .project_wrap .project_list li .card_3 {background-color: #FFB5C2;}
 /* ------------------------------------------- 7행-오롤리데이 리디자인 */
@@ -434,7 +437,7 @@ html {scroll-behavior:smooth;}
     display:flex; flex-flow:row nowrap; gap:100px;
 }
 .main_slide .swiper-wrapper #lolly_redesign .lolly_website_img {
-    background-color:#E0C3EF;
+    /* background-color:#E0C3EF; */
     width:1097px; height:750px;
     overflow:hidden;
     border-radius:0 30px 30px 0;
