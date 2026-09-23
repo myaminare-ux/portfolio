@@ -1,44 +1,34 @@
 /* index.css */
 html {scroll-behavior:smooth;}
-.main_slide {height:100vh; width:100%; position:relative;}
+.swiper {height:100vh; width:100%; position:relative;}
 .main_slide .swiper-wrapper {}
 .main_slide > .swiper-wrapper > .swiper-slide {
-    min-width:var(--width-desk-v1); 
+    max-width:var(--width-desk-v1); 
     height:100vh;
 }
 /* ------------------------------------------- 1행-인트로 */
 .main_slide .swiper-wrapper .intro {
-    background-image:url(../images/intro.jpg);
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+    /* background-image:url(../images/intro.jpg); */
+    background:linear-gradient(135deg, #FCD9DF, #CFE0F8);
     width:100%; height:100%;
+    position:relative;
 }
-.main_slide .swiper-wrapper .intro img {}
-.main_slide .swiper-wrapper .intro img:nth-child(1) {
-    width:74px;
-    position:absolute;
-    right:712px; top:248px;
-    /* animation:star1V1 10s linear infinite; */
-}
-.main_slide .swiper-wrapper .intro img:nth-child(2) {
-    width:60px;
-    position:absolute;
-    left:685px; top:544px;
-}
-.main_slide .swiper-wrapper .intro img:nth-child(3) {
+.main_slide .swiper-wrapper .intro .intro_bg {}
+.main_slide .swiper-wrapper .intro .intro_bg img {}
+.main_slide .swiper-wrapper .intro .intro_bg img:nth-child(1) {position:absolute; top:50%; left:50%; transform:translate(-50%, -44%); z-index:10;}
+.main_slide .swiper-wrapper .intro .intro_bg img:nth-child(2) {
     width:62px;
     position:absolute;
     right:412px; bottom:178px;
     animation:star2 0.4s linear infinite alternate;
 }
-.main_slide .swiper-wrapper .intro img:nth-child(4) {
+.main_slide .swiper-wrapper .intro .intro_bg img:nth-child(3) {
     width:66px;
     position:absolute;
-    left:333px; top:196px;
+    left:20%; top:196px;
     animation:star3 1s linear infinite alternate;
 }
-.main_slide .swiper-wrapper .intro img:nth-child(5) {
+.main_slide .swiper-wrapper .intro .intro_bg img:nth-child(4) {
     width:45px;
     position:absolute;
     left:50%; bottom:60px;
@@ -47,66 +37,65 @@ html {scroll-behavior:smooth;}
 }
 /* ------------------------------------------- 2행-목차 */
 .main_slide .swiper-wrapper .content {
-    background-image:url(../images/content.jpg);
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+    /* background-image:url(../images/content.jpg); */
+    background:linear-gradient(135deg, #E0C3EF, #CDCCF7, #BBD5FF);
     width:100%; height:100%;
+    position:relative;
 }
-.main_slide .swiper-wrapper .content .deco {position:relative;}
-.main_slide .swiper-wrapper .content .deco span {}
-.main_slide .swiper-wrapper .content .deco span:nth-child(1) {
+.main_slide .swiper-wrapper .content .deco {/* position:relative; */}
+.main_slide .swiper-wrapper .content .deco img:nth-child(1) {position:absolute; top:12%; left:5%; z-index:10;}
+.main_slide .swiper-wrapper .content .deco img:nth-child(2) {
     position:absolute;
-    left:348px; top:-53px;
+    left:20%; top:-53px;
     transform-origin:top center;
     animation:pattern 1.5s linear infinite alternate;
+    width:83px; height:216px;
 }
-.main_slide .swiper-wrapper .content .deco span:nth-child(2) {
+.main_slide .swiper-wrapper .content .deco img:nth-child(3) {
     position:absolute;
-    left:450px; top:0;
+    left:23%; top:0;
     transform-origin:top center;
     animation:pattern 3.5s linear infinite alternate;
+    width:138px; height:357px;
 }
-.main_slide .swiper-wrapper .content .deco span:nth-child(3) {
+.main_slide .swiper-wrapper .content .deco img:nth-child(4) {
     position:absolute;
     left:546px; top:0;
     transform-origin:top center;
     animation:pattern 2.5s linear infinite alternate;
-}
-.main_slide .swiper-wrapper .content .deco span img {}
-.main_slide .swiper-wrapper .content .deco span:nth-child(1) img {width:83px; height:216px;}
-.main_slide .swiper-wrapper .content .deco span:nth-child(2) img {width:138px; height:357px;}
-.main_slide .swiper-wrapper .content .deco span:nth-child(3) img {width:98px; height:255px;}
-.main_slide .swiper-wrapper .content .deco img:nth-child(4) {
-    width:59px;
-    position:absolute;
-    left:941px; top:245px;
-    animation:star2 1.2s linear infinite alternate;
+    width:98px; height:255px;
 }
 .main_slide .swiper-wrapper .content .deco img:nth-child(5) {
     width:59px;
     position:absolute;
-    right:653px; top:455px;
-    animation:star3 1s linear infinite alternate;
+    left:50%; top:245px;
+    animation:star2 1.2s linear infinite alternate;
 }
 .main_slide .swiper-wrapper .content .deco img:nth-child(6) {
+    width:59px;
+    position:absolute;
+    right:35%; top:455px;
+    animation:star3 1s linear infinite alternate;
+}
+.main_slide .swiper-wrapper .content .deco img:nth-child(7) {
     width:73px;
     position:absolute;
-    right:337px; top:304px;
+    right:20%; top:304px;
     animation:star2 1.2s linear infinite alternate;
 }
 .main_slide .swiper-wrapper .content .list {
     display:flex; flex-flow:row nowrap;
     justify-content:center; gap:230px;
-    padding-top:661px;
+    position:absolute; left:50%; top:50%;
+    transform:translate(-50%, 330%); width:100%;
 }
 .main_slide .swiper-wrapper .content .list > * {
     background-color:#fff;
-    width:max-content; 
     border-radius:50px;
     padding:16px 32px;
     font-size:1.25em;
     transition:transform 0.5s ease;
+    z-index:5;
 }
 .main_slide .swiper-wrapper .content .list a:hover {
     transform:scale(1.2);
@@ -116,17 +105,21 @@ html {scroll-behavior:smooth;}
 .main_slide .swiper-wrapper .content .list .project_btn {}
 /* ------------------------------------------- 3행-자기소개 */
 .main_slide .swiper-wrapper #introduce {
-    background-image:url(../images/introduce.jpg);
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    width:100%; height:100%;
-    padding:265px 85px 75px 212px;
-    display:flex; flex-flow:row nowrap;
+    /* background-image:url(../images/introduce.jpg); */
+    background:linear-gradient(135deg, #FCD9DF, #CFE0F8);
+    padding:265px 75px 212px;
+    display:flex; flex-flow:row nowrap; gap:160px;
+    align-items:center; justify-content:center;
+}
+.main_slide .swiper-wrapper #introduce .introduce_title {position:absolute; top:100px; left:50%; transform:translateX(-50%); z-index:10;}
+.main_slide .swiper-wrapper #introduce > div {
+    flex-shrink: 1;
+    max-width: 100%;
 }
 .main_slide .swiper-wrapper #introduce .self {
     width:317px; height:460px;
-    margin-right:127px;
+    /* margin-right:127px; */
+    display:flex; flex-flow:column nowrap;
 }
 .main_slide .swiper-wrapper #introduce .self .photo {
     background-color:#f5f5f5;
@@ -147,7 +140,7 @@ html {scroll-behavior:smooth;}
     margin-top:16px;
 }
 .main_slide .swiper-wrapper #introduce .about_me {
-    width:1180px; height:560px;
+    /* width:1180px; height:560px; */
     display:flex; flex-flow:column nowrap;
 }
 /* ------------------------------------------- 3-1. top */
@@ -176,7 +169,7 @@ html {scroll-behavior:smooth;}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div p {}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div .date {}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div .edu {}
-.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div .edu >  span:nth-child(2) {font-size:0.875em;}
+.main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu div .edu >  span:nth-child(2) {font-size:0.875em; line-height:1.4;}
 /* ------------------------------------------- 대학교 */
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .uni {margin-bottom:14px;}
 .main_slide .swiper-wrapper #introduce .about_me .top .education .date_edu .uni .date {}
@@ -240,46 +233,37 @@ html {scroll-behavior:smooth;}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .left .pastry .title span {line-height:1.4;}
 /* ------------------------------------------- right */
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right {}
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right div {
-    display:flex; flex-flow:row nowrap;
-    gap:30px; align-items:flex-start;
-}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right div {display:flex; flex-flow:row nowrap; gap:30px; align-items:flex-start;}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right div p span:nth-child(2) {font-size:0.875em;}
 /* ------------------------------------------- 디저트 */
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert {margin-bottom:14px;}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert .date {}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert .title {display:flex; flex-flow:column nowrap; gap:4px;}
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert .title span {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .dessert .title span {line-height:1.4;}
 /* ------------------------------------------- 제빵 */
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .baking {}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .baking .date {}
 .main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .baking .title {display:flex; flex-flow:column nowrap; gap:4px;}
-.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .baking .title span {}
+.main_slide .swiper-wrapper #introduce .about_me .btm .job .training .right .baking .title span {line-height:1.4;}
 /* ------------------------------------------- 4행-스킬&툴 */
 .main_slide .swiper-wrapper #skill {
-    background-image:url(../images/skill_tools_bg.jpg);
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    padding:260px 200px 120px;
+    /* background-image:url(../images/skill_tools_bg.jpg); */
+    background:linear-gradient(90deg, #E0C3EF, #BBD5FF);
+    padding-top:250px;
+    position:relative;
 }
-.main_slide .swiper-wrapper #skill .skill_wrap {
+.main_slide .swiper-wrapper #skill .skill_group {max-width:1520px; height:100%; position:relative; margin:0 auto;}
+.main_slide .swiper-wrapper #skill .skill_group .sklii_title {position:absolute; top:-20%; left:50%; transform:translateX(-50%);}
+.main_slide .swiper-wrapper #skill .skill_group .skill_wrap {
     background-color:#fff;
-    padding-top:40px;
-    height:100%;
-    display:flex; flex-flow:row wrap;
-    justify-content:center; gap:30px;
-    /* align-items:center; */
-    border-radius:40px;
-    text-align:center;
+    padding:50px 0 50px; width:100%; height:80%;
+    display:flex; flex-flow:row wrap; justify-content:center; gap:100px;
+    text-align:center; align-items:center; border-radius:40px;
+    /* position:absolute; top:50%; left:50%; transform:translate(-50%, -45%); */
 }
-.main_slide .swiper-wrapper #skill .skill_wrap dl {width:360px; height:240px;}
+.main_slide .swiper-wrapper #skill .skill_wrap dl {width:340px; height:auto;}
 .main_slide .swiper-wrapper #skill .skill_wrap dl dt {}
-.main_slide .swiper-wrapper #skill .skill_wrap dl dt h3 {
-    font-family:'Noto Serif KR';
-    font-size:1.625em;
-    font-weight:500;
-}
+.main_slide .swiper-wrapper #skill .skill_wrap dl dt h3 {font-family:'Noto Serif KR'; font-size:1.625em; font-weight:500;}
 .main_slide .swiper-wrapper #skill .skill_wrap dl dt p {
     background-size:100%;
     background-position:center;
@@ -287,10 +271,7 @@ html {scroll-behavior:smooth;}
     width:60px; height:60px;
     margin:10px auto;
 }
-.main_slide .swiper-wrapper #skill .skill_wrap dl .summary {
-    margin-bottom:10px;
-    line-height:1.1;
-}
+.main_slide .swiper-wrapper #skill .skill_wrap dl .summary {margin-bottom:10px; line-height:1.1;}
 .main_slide .swiper-wrapper #skill .skill_wrap dl .desc {
     font-size:0.75em;
     font-weight:300;
@@ -594,7 +575,7 @@ html {scroll-behavior:smooth;}
     overflow:hidden;
     border-radius:30px 0 0 30px;
 }
-.main_slide .swiper-wrapper .ts_redesign .ts_website_img img {width:100%;}
+.main_slide .swiper-wrapper .ts_redesign .ts_website_img img {width:auto;}
 /* ------------------------------------------- 9행-UIUX 디자인 */
 .main_slide .swiper-wrapper #uiux_design {
     background-color:#F8EAFF;
