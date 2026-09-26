@@ -1,4 +1,94 @@
 /* index.js */
+
+// 3행 자기소개 영역 for 반복처리
+// function renderAboutMe (){
+//     console.log("함수 실행됨!");
+//     console.log("DB 데이터 확인:", aboutMeDB);
+//     const container = document.querySelector('.about_me');
+//     if (!container) return;
+
+//     let htmlStr = '';
+
+//     aboutMeDB.forEach(section => {
+//         htmlStr += `<div class="info_box ${section.type}_box">`;
+//         htmlStr += `<h2 class="box_title">${section.title}</h2>`;
+//         htmlStr += `<div class="box_content">`;
+
+//         if (section.type === 'definition'){
+//             htmlStr += `<dl class="info_group">`;
+//             section.items.forEach(item => {
+//                 htmlStr += `<div class="row">
+//                     <dt>${item.label}</dt>
+//                     <dd>${item.value}</dd>
+//                 </div>`;
+//             });
+//             htmlStr += `</dl>`;
+//         }
+//         else if (section.type === 'list'){
+//             htmlStr += `<ul class="license_list">`;
+//             section.items.forEach(item => {
+//                 htmlStr += `<li>${item}</li>`;
+//             });
+//             htmlStr += `</ul>`;
+//         }
+//         else if (section.type === 'timeline'){
+//             htmlStr += `<ul class="edu_list">`;
+//             section.items.forEach(item => {
+//                 htmlStr += `<li>
+//                     <p class="date">${item.date}</p>
+//                     <div class="edu_name">
+//                         <p>${item.desc}</p>${item.sub ? `<p>${item.sub}</p>` : ''}
+//                     </div>
+//                 </li>`;
+//             });
+//             htmlStr += `</ul>`;
+//         }
+//         else if (section.type === 'skills'){
+//             htmlStr += `<ul class="skill_list">`;
+//             section.items.forEach(item => {
+//                 htmlStr += `<li><img src="${item.icon}" alt="${item.name}"></li>`;
+//             });
+//             htmlStr += `</ul>`;
+//         }
+//         else if (section.type === 'training'){
+//             htmlStr += `<ul class="train_list">`;
+//             section.items.forEach(item => {
+//                 htmlStr += `<li>
+//                     <p class="date">${item.date}</p>
+//                     <div class="train_name">
+//                         <p>${item.desc}</p>
+//                         <p>${item.detail}</p>
+//                     </div>
+//                 </li>`;
+//             });
+//             htmlStr += `</ul>`;
+//         }
+//         htmlStr += `    </div>`;
+//         htmlStr += `</div>`;
+//     });
+//     container.innerHTML = htmlStr;
+// }
+
+// document.addEventListener('DOMContentLoaded',renderAboutMe);
+
+// 메인 스와이퍼
+// const mainSlide = new Swiper('#main_slide',{
+//     direction:'vertical',
+//     slidesPerView:1,
+//     mousewheel:true,
+// });
+
+// 4행 스킬&툴
+
+
+
+// 10행 상세페이지, 광고 포스터 스와이퍼
+
+
+
+
+
+
 // 스와이퍼 모음
 const mainSlide = new Swiper('.main_slide',{
     direction:'vertical',

@@ -1,0 +1,18 @@
+/* responsive.css */
+/* @media screen and (max-width:1750) {
+    .main_slide > .swiper-wrapper > .swiper-slide {
+        max-width:var(--width-desk-v2); 
+        height:100vh;
+    }
+} */
+
+@media screen and (max-width:1530){
+    /* 4행 스킬&툴 */
+    .main_slide .swiper-wrapper #skill .skill_group {max-width:0; width:100%; padding:80px 100px 120px;}
+    .main_slide .swiper-wrapper #skill .skill_group .skill_wrap {
+        padding:50px 0 50px; width:100%; height:auto; gap:20px;
+    }
+    .main_slide .swiper-wrapper #skill .skill_wrap dl {width:340px; height:auto;}
+    .main_slide .swiper-wrapper #skill .skill_wrap dl dt {}
+    .main_slide .swiper-wrapper #skill .skill_wrap dl dt h3 {font-size:1.625em; font-weight:500;}
+}

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/var.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
     <link rel="stylesheet" href="./styles/animation.css">
     <script src="./scripts/index.js" defer></script>
     <!--swiper 필수 css cdn 연결-->
@@ -222,48 +223,53 @@
             </div><!-- e:skill -->
             <!-- 5행-프로세스 -->
             <div class="swiper-slide process">
-                <div class="process_title"><!-- 전체 타이틀 -->
-                    <p class="star_img"><!-- 아이콘 background-image로 처리 --></p>
-                    <p class="title">My PROJECT PROCESS</p>
-                </div>
-                <ol class="process_sequence">
-                    <!-- 프로세스 순서 1개 박스 -->
-                    <li>
-                        <p class="num">01.</p>
-                        <div class="info">
-                            <h3>리서치 및 계획하기</h3>
-                            <p>어떤 웹사이트나 앱을 만들지 구상하고, 어떤 메뉴와 내용이 들어갈지 결정합니다.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="num">02.</p>
-                        <div class="info">
-                            <h3>와이어프레임 및 정보 구조화 하기</h3>
-                            <p>화면의 뼈대와 메뉴 구조를 설계하여, 사용자가 막힘없이 목적까지 이동할 수 있도록 합니다.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="num">03.</p>
-                        <div class="info">
-                            <h3>UI 디자인 만들기</h3>
-                            <p>색상, 폰트, 이미지, 버튼 디자인을 적용해 완성된 '디자인 화면(시안)'을 만들어냅니다.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="num">04.</p>
-                        <div class="info">
-                            <h3>마크업 개발하기</h3>
-                            <p>피그마 화면을 보면서 웹 브라우저가 읽을 수 있도록 글자, 이미지, 섹션 등의 HTML 코드 작성합니다.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <p class="num">05.</p>
-                        <div class="info">
-                            <h3>스타일링 및 동적 구현하기</h3>
-                            <p>CSS로 피그마 디자인과 반응형 화면을 구현하고, JS로 기본 인터랙션(버튼 동작 등)을 더합니다.</p>
-                        </div>
-                    </li>
-                </ol><!-- e:process_sequence -->
+                <div class="process_wrap">
+                    <p class="process_title">
+                        <img src="./images/portfolio_title.png" alt="">
+                    </p>
+                    <div class="process_header"><!-- 전체 타이틀 -->
+                        <p class="star_img"><!-- 아이콘 background-image로 처리 --></p>
+                        <p class="title">My PROJECT PROCESS</p>
+                    </div>
+                    <ol class="process_sequence">
+                        <!-- 프로세스 순서 1개 박스 -->
+                        <li>
+                            <p class="num">01.</p>
+                            <div class="info">
+                                <h3>리서치 및 계획하기</h3>
+                                <p>어떤 웹사이트나 앱을 만들지 구상하고, 어떤 메뉴와 내용이 들어갈지 결정합니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="num">02.</p>
+                            <div class="info">
+                                <h3>와이어프레임 및 정보 구조화 하기</h3>
+                                <p>화면의 뼈대와 메뉴 구조를 설계하여, 사용자가 막힘없이 목적까지 이동할 수 있도록 합니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="num">03.</p>
+                            <div class="info">
+                                <h3>UI 디자인 만들기</h3>
+                                <p>색상, 폰트, 이미지, 버튼 디자인을 적용해 완성된 '디자인 화면(시안)'을 만들어냅니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="num">04.</p>
+                            <div class="info">
+                                <h3>마크업 개발하기</h3>
+                                <p>피그마 화면을 보면서 웹 브라우저가 읽을 수 있도록 글자, 이미지, 섹션 등의 HTML 코드 작성합니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="num">05.</p>
+                            <div class="info">
+                                <h3>스타일링 및 동적 구현하기</h3>
+                                <p>CSS로 피그마 디자인과 반응형 화면을 구현하고, JS로 기본 인터랙션(버튼 동작 등)을 더합니다.</p>
+                            </div>
+                        </li>
+                    </ol><!-- e:process_sequence -->
+                </div><!-- e:process_wrap -->
             </div><!-- e:process -->
             <!-- 6행-프로젝트 목차 -->
             <div class="swiper-slide" id="project">
