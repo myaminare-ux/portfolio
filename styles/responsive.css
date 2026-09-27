@@ -6,13 +6,122 @@
     }
 } */
 
-@media screen and (max-width:1530){
-    /* 4행 스킬&툴 */
-    .main_slide .swiper-wrapper #skill .skill_group {max-width:0; width:100%; padding:80px 100px 120px;}
-    .main_slide .swiper-wrapper #skill .skill_group .skill_wrap {
-        padding:50px 0 50px; width:100%; height:auto; gap:20px;
+@media screen and (max-width:1540px){
+    /* 1행-인트로 */
+    .main_slide .swiper-wrapper .intro {max-width:100%;}
+    .main_slide .swiper-wrapper .intro .intro_bg img:nth-child(2) {width:52px; bottom:19%;}
+    .main_slide .swiper-wrapper .intro .intro_bg img:nth-child(3) {width:56px; top:10%; left:10%;}
+    /* 2행-목차 */
+    .main_slide .swiper-wrapper .content {max-width:100%; overflow:hidden;}
+    .main_slide .swiper-wrapper .content .deco img:nth-child(1) {top:10%;}
+    .main_slide .swiper-wrapper .content .deco img:nth-child(2) {left:20%; top:-53px;}
+    .main_slide .swiper-wrapper .content .deco img:nth-child(3) {left:23%; top:-10%;}
+    .main_slide .swiper-wrapper .content .deco img:nth-child(4) {left:546px; top:0;}
+    .main_slide .swiper-wrapper .content .deco img:nth-child(5) {width:49px; left:50%; top:245px;}
+    .main_slide .swiper-wrapper .content .deco img:nth-child(6) {width:49px; right:35%; top:50%;}
+    .main_slide .swiper-wrapper .content .deco img:nth-child(7) {width:63px; right:20%; top:304px;}
+    /* 3행-자기소개 */
+    .main_slide .swiper-wrapper #introduce {max-width:100%; padding:150px 60px 0; gap:40px;}
+    .main_slide .swiper-wrapper #introduce .introduce_title {top:8%;}
+    .main_slide .swiper-wrapper #introduce .self {
+        width:317px; height:auto;
+        /* margin-right:127px; */
+        display:flex; flex-flow:column nowrap;
     }
-    .main_slide .swiper-wrapper #skill .skill_wrap dl {width:340px; height:auto;}
-    .main_slide .swiper-wrapper #skill .skill_wrap dl dt {}
-    .main_slide .swiper-wrapper #skill .skill_wrap dl dt h3 {font-size:1.625em; font-weight:500;}
+    .main_slide .swiper-wrapper #introduce .self .photo {height:360px;}
+    .main_slide .swiper-wrapper #introduce .self .dsc {font-size:var(--font-size-14);}
+    /* 3-1. top */
+    .main_slide .swiper-wrapper #introduce .about_me .top {justify-content:space-between;}
+    /* 3-1-1. 인적사항 */
+    .main_slide .swiper-wrapper #introduce .about_me .top .self_introduce {width:300px; height:240px;}
+    /* 3-1-2. 자격증 */
+    .main_slide .swiper-wrapper #introduce .about_me .top .license {width:240px; height:240px;}
+    /* 3-1-3. 학교 */
+    /* 3-1-3-1. 대학교 */
+    /* 3-1-3-2. 고등학교 */
+    /* 3-1-3-3. 중학교 */
+    /* 3-2. btm */
+    .main_slide .swiper-wrapper #introduce .about_me .btm {justify-content:space-between;}
+    /* 4행 스킬&툴 */
+    .main_slide .swiper-wrapper #skill {padding-top:280px;}
+    .main_slide .swiper-wrapper #skill .skill_group {max-width:100%; padding:5px 60px 0;}
+    .main_slide .swiper-wrapper #skill .skill_group .skill_wrap {padding:30px 0 30px; height:auto;}
+    .main_slide .swiper-wrapper #skill .skill_wrap dl {width:auto; height:auto;}
+    .main_slide .swiper-wrapper #skill .skill_wrap dl dt h3 {font-size:var(--font-size-23);}
+    .main_slide .swiper-wrapper #skill .skill_wrap dl dt p {width:56px; height:56px;}
+    .main_slide .swiper-wrapper #skill .skill_wrap dl .desc {font-size:var(----font-size-10);}
+    /* 5행-프로세스 */
+    .main_slide .swiper-wrapper .process {max-width:100%; padding:430px 0 0;}
+    .main_slide .swiper-wrapper .process .process_wrap {padding:0 60px;}
+    .main_slide .swiper-wrapper .process .process_wrap .process_title {top:10%;}
+    .main_slide .swiper-wrapper .process .process_wrap .process_sequence li .num::after {bottom:10px; height:100px;}
+    /* ------------------------------------------- 5-1. 개별디자인 */
+    .main_slide .swiper-wrapper .process .process_sequence li:nth-child(1) .num {color:#86BCFE;}
+    .main_slide .swiper-wrapper .process .process_sequence li:nth-child(2) .num {color:#B2D4FF;}
+    .main_slide .swiper-wrapper .process .process_sequence li:nth-child(2) .num::after {background-color:#B2D4FF;}
+    .main_slide .swiper-wrapper .process .process_sequence li:nth-child(3) .num {color:#E5DDEB;}
+    .main_slide .swiper-wrapper .process .process_sequence li:nth-child(3) .num::after {background-color:#E5DDEB;}
+    .main_slide .swiper-wrapper .process .process_sequence li:nth-child(4) .num {color:#FCD9DF;}
+    .main_slide .swiper-wrapper .process .process_sequence li:nth-child(4) .num::after {background-color:#FCD9DF;}
+    .main_slide .swiper-wrapper .process .process_sequence li:nth-child(5) .num {color:#FFB5C2;}
+    .main_slide .swiper-wrapper .process .process_sequence li:nth-child(5) .num::after {background-color:#FFB5C2;}
+    /* 6행-프로젝트 목차 */
+    .main_slide .swiper-wrapper #project {max-width:100%; padding:10% 60px 0;}
+    .main_slide .swiper-wrapper #project .project_wrap .project_list li {height:500px;}
+    /* 7행-오롤리데이 리디자인 */
+    .main_slide .swiper-wrapper #lolly_redesign {max-width:100%; padding:0 60px 0 0; gap:60px;}
+    .main_slide .swiper-wrapper #lolly_redesign .lolly_website_img {width:900px; height:100%; display:flex; justify-content:center; align-items:center;}
+    .main_slide .swiper-wrapper #lolly_redesign .lolly_website_img img {height:100%;}
+    /* 7-1. 오른쪽 오롤리데이 정보 */
+    .main_slide .swiper-wrapper #lolly_redesign .lolly_info {width:40%;}
+    /* 7-1-1. 헤더 */
+    .main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_header .sort_wrap {margin-bottom:7px;}
+    .main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_header .lolly_title_wrap {margin-bottom:7px;}
+    .main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_header .sub_detail {margin-bottom:35px;}
+    /* 7-1-2. 제작 기간, 기여도 */
+    .main_slide .swiper-wrapper #lolly_redesign .lolly_info .date_part {margin-bottom:35px;}
+    /* 7-1-3. 제작 계획 */
+    .main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_plan .plan_info {margin-bottom:35px;}
+    /* 7-1-4. 사용한 툴, 스킬 */
+    .main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_make_tools .tool_list {margin-bottom:35px;}
+    /* 8행-TS 트릴리온 리디자인 */
+    .main_slide .swiper-wrapper .ts_redesign {max-width:100%; padding:0 0 0 60px; gap:60px;}
+    /* 8-1. 왼쪽 TS 트릴리온 정보 */
+    .main_slide .swiper-wrapper .ts_redesign .ts_info {width:40%;}
+    /* 8-1-1. 헤더 */
+    .main_slide .swiper-wrapper .ts_redesign .ts_info .ts_header .sort_wrap {margin-bottom:7px;}
+    .main_slide .swiper-wrapper .ts_redesign .ts_info .ts_header .ts_title_wrap {margin-bottom:7px;}
+    .main_slide .swiper-wrapper .ts_redesign .ts_info .ts_header .sub_detail {margin-bottom:35px;}
+    /* 8-1-2. 제작 기간, 기여도 */
+    .main_slide .swiper-wrapper .ts_redesign .ts_info .date_part {margin-bottom:35px;}
+    /* 8-1-3. 제작 계획 */
+    .main_slide .swiper-wrapper .ts_redesign .ts_info .ts_plan .plan_info {margin-bottom:35px;}
+    /* 8-1-4. 사용한 툴, 스킬 */
+    .main_slide .swiper-wrapper .ts_redesign .ts_info .ts_make_tools .tool_list {margin-bottom:35px;}
+    /* 8-2. 오른쪽 TS 트릴리온 리디자인 목업 이미지 */
+    .main_slide .swiper-wrapper .ts_redesign .ts_website_img {width:900px; height:100%; display:flex; justify-content:center; align-items:center;}
+    .main_slide .swiper-wrapper .ts_redesign .ts_website_img img {height:100%;}
+    /* 9행-UIUX 디자인 */
+    .main_slide .swiper-wrapper #uiux_design {max-width:100%; padding:0 60px 0 0; gap:60px;}
+    /* 9-1. 왼쪽 UIUX 디자인 목업 이미지 */
+    .main_slide .swiper-wrapper #uiux_design .diary_img {width:900px; height:100%; display:flex; justify-content:center; align-items:center;}
+    /* 9-2. 오른쪽 UIUX 디자인 정보 */
+    .main_slide .swiper-wrapper #uiux_design .diary_info {width:40%;}
+    /* 9-2-1. 헤더 */
+    .main_slide .swiper-wrapper #uiux_design .diary_info .diary_header .sort_wrap {margin-bottom:7px;}
+    .main_slide .swiper-wrapper #uiux_design .diary_info .diary_header .diary_title_wrap {margin-bottom:7px;}
+    .main_slide .swiper-wrapper #uiux_design .diary_info .diary_header .sub_detail {margin-bottom:35px;}
+    /* 9-2-2. 헤더 */
+    .main_slide .swiper-wrapper #uiux_design .diary_info .date_part {margin-bottom:35px;}
+    /* 9-2-3. 제작 계획 */
+    .main_slide .swiper-wrapper #uiux_design .diary_info .diary_plan .plan_info {margin-bottom:35px;}
+    /* 9-2-4. 사용한 툴, 스킬 */
+    .main_slide .swiper-wrapper #uiux_design .diary_info .diary_make_tools .tool_list {margin-bottom:35px;}
+    /* 10행-상세 페이지, 광고 배너 */
+    .main_slide .swiper-wrapper #graphic {max-width:100%; padding:10% 60px 0;}
+    /* 11행-마무리 */
+    .main_slide .swiper-wrapper .finish {padding-top:40%;}
+    .main_slide .swiper-wrapper .finish .star_img {width:82px; height:82px; left:28%; top:17%;}
+    /* TOP 버튼 디자인 */
+    .top_btn {right:5%; bottom:5%;}
 }
