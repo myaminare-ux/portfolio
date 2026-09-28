@@ -6,7 +6,7 @@
     }
 } */
 
-@media screen and (max-width:1540px){
+@media screen and (max-width:1600px){
     /* 1행-인트로 */
     .main_slide .swiper-wrapper .intro {max-width:100%;}
     .main_slide .swiper-wrapper .intro .intro_bg img:nth-child(2) {width:52px; bottom:19%;}
@@ -54,7 +54,7 @@
     .main_slide .swiper-wrapper .process {max-width:100%; padding:430px 0 0;}
     .main_slide .swiper-wrapper .process .process_wrap {padding:0 60px;}
     .main_slide .swiper-wrapper .process .process_wrap .process_title {top:10%;}
-    .main_slide .swiper-wrapper .process .process_wrap .process_sequence li .num::after {bottom:10px; height:100px;}
+    .main_slide .swiper-wrapper .process .process_wrap .process_sequence li .num::after {bottom:10px; height:70%;}
     /* ------------------------------------------- 5-1. 개별디자인 */
     .main_slide .swiper-wrapper .process .process_sequence li:nth-child(1) .num {color:#86BCFE;}
     .main_slide .swiper-wrapper .process .process_sequence li:nth-child(2) .num {color:#B2D4FF;}
