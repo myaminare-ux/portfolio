@@ -43,7 +43,7 @@
     /* 3-2. btm */
     .main_slide .swiper-wrapper #introduce .about_me .btm {justify-content:space-between;}
     /* 4행 스킬&툴 */
-    .main_slide .swiper-wrapper #skill {padding-top:280px;}
+    .main_slide .swiper-wrapper #skill {padding-top:240px;}
     .main_slide .swiper-wrapper #skill .skill_group {max-width:100%; padding:5px 60px 0;}
     .main_slide .swiper-wrapper #skill .skill_group .skill_wrap {padding:30px 0 30px; height:auto;}
     .main_slide .swiper-wrapper #skill .skill_wrap dl {width:auto; height:auto;}
