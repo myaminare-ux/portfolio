@@ -684,7 +684,7 @@ html {scroll-behavior:smooth;}
 /* ------------------------------------------- 10-2. 디자인 이미지 슬라이더 */
 .main_slide .swiper-wrapper #graphic .graphic_design {}
 .main_slide .swiper-wrapper #graphic .graphic_design .swiper-wrapper {}
-.main_slide .swiper-wrapper #graphic .graphic_design .swiper-wrapper .swiper-slide {height:500px; border-radius:30px; overflow:hidden;}
+.main_slide .swiper-wrapper #graphic .graphic_design .swiper-wrapper .swiper-slide {height:65%; border-radius:30px; overflow:hidden;}
 .main_slide .swiper-wrapper #graphic .graphic_design .swiper-wrapper .swiper-slide img {height:100%; width:100%;}
 /* ------------------------ 슬라이드 개별 디자인 */
 .main_slide .swiper-wrapper #graphic .graphic_design .swiper-wrapper .design1 {background-color:#FFB5C2;}
