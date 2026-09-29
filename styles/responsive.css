@@ -54,8 +54,9 @@
     .main_slide .swiper-wrapper #skill .skill_group {max-width:100%; padding:2% 60px 0;}
     .main_slide .swiper-wrapper #skill .skill_group .skill_wrap {padding:30px 30px; height:70vh; flex-flow:row nowrap; gap:30px;}
     .main_slide .swiper-wrapper #skill .skill_wrap dl {width:auto; height:300px;}
-    .main_slide .swiper-wrapper #skill .skill_wrap dl dt h3 {font-size:var(--font-size-23); word-break: keep-all;}
+    .main_slide .swiper-wrapper #skill .skill_wrap dl dt h3 {font-size:var(--font-size-23);}
     .main_slide .swiper-wrapper #skill .skill_wrap dl dt p {width:56px; height:56px;}
+    .main_slide .swiper-wrapper #skill .skill_wrap dl .summary {word-break:keep-all;}
     .main_slide .swiper-wrapper #skill .skill_wrap dl .desc {font-size:var(----font-size-10);}
     /* 5행-프로세스 */
     .main_slide .swiper-wrapper .process {max-width:100%; padding:20% 0 0;}
