@@ -8,6 +8,7 @@
 
 @media screen and (max-width:1600px){
     /* 1행-인트로 */
+    .main_slide {min-width:1300px;}
     .main_slide .swiper-wrapper .intro {max-width:100%;}
     .main_slide .swiper-wrapper .intro .intro_bg img:nth-child(2) {width:52px; bottom:19%;}
     .main_slide .swiper-wrapper .intro .intro_bg img:nth-child(3) {width:56px; top:10%; left:10%;}
@@ -22,18 +23,19 @@
     .main_slide .swiper-wrapper .content .deco img:nth-child(7) {width:63px; right:20%; top:304px;}
     /* 3행-자기소개 */
     .main_slide .swiper-wrapper #introduce {max-width:100%; padding:150px 60px 0; gap:40px;}
-    .main_slide .swiper-wrapper #introduce .introduce_title {top:8%;}
+    .main_slide .swiper-wrapper #introduce .introduce_title {top:3%;}
     .main_slide .swiper-wrapper #introduce .self {
         width:317px; height:auto;
         /* margin-right:127px; */
         display:flex; flex-flow:column nowrap;
     }
-    .main_slide .swiper-wrapper #introduce .self .photo {height:360px;}
+    .main_slide .swiper-wrapper #introduce .self .photo {height:320px; width:230px;}
     .main_slide .swiper-wrapper #introduce .self .dsc {font-size:var(--font-size-14);}
     /* 3-1. top */
     .main_slide .swiper-wrapper #introduce .about_me .top {justify-content:space-between;}
+    .main_slide .swiper-wrapper #introduce .about_me .top div > h2 {font-size:var(--font-size-24);}
     /* 3-1-1. 인적사항 */
-    .main_slide .swiper-wrapper #introduce .about_me .top .self_introduce {width:300px; height:240px;}
+    .main_slide .swiper-wrapper #introduce .about_me .top .self_introduce {width:310px; height:240px;}
     /* 3-1-2. 자격증 */
     .main_slide .swiper-wrapper #introduce .about_me .top .license {width:240px; height:240px;}
     /* 3-1-3. 학교 */
@@ -42,18 +44,22 @@
     /* 3-1-3-3. 중학교 */
     /* 3-2. btm */
     .main_slide .swiper-wrapper #introduce .about_me .btm {justify-content:space-between;}
+    .main_slide .swiper-wrapper #introduce .about_me .btm .skill h2,
+    .main_slide .swiper-wrapper #introduce .about_me .btm .job h2
+    {font-size:var(--font-size-24);}
     /* 4행 스킬&툴 */
-    .main_slide .swiper-wrapper #skill {padding-top:240px;}
+    .main_slide .swiper-wrapper #skill {padding-top:10%;}
     .main_slide .swiper-wrapper #skill .skill_group {max-width:100%; padding:5px 60px 0;}
-    .main_slide .swiper-wrapper #skill .skill_group .skill_wrap {padding:30px 0 30px; height:auto;}
-    .main_slide .swiper-wrapper #skill .skill_wrap dl {width:auto; height:auto;}
+    .main_slide .swiper-wrapper #skill .skill_group .skill_wrap {padding:30px 30px; height:70vh; flex-flow:row nowrap; gap:30px;}
+    .main_slide .swiper-wrapper #skill .skill_wrap dl {width:auto; height:300px;}
     .main_slide .swiper-wrapper #skill .skill_wrap dl dt h3 {font-size:var(--font-size-23);}
     .main_slide .swiper-wrapper #skill .skill_wrap dl dt p {width:56px; height:56px;}
     .main_slide .swiper-wrapper #skill .skill_wrap dl .desc {font-size:var(----font-size-10);}
     /* 5행-프로세스 */
-    .main_slide .swiper-wrapper .process {max-width:100%; padding:430px 0 0;}
-    .main_slide .swiper-wrapper .process .process_wrap {padding:0 60px;}
+    .main_slide .swiper-wrapper .process {max-width:100%; padding:20% 0 0;}
+    .main_slide .swiper-wrapper .process .process_wrap {padding:0 30px;}
     .main_slide .swiper-wrapper .process .process_wrap .process_title {top:10%;}
+    .main_slide .swiper-wrapper .process .process_wrap .process_sequence {width:100%; gap:40px;}
     .main_slide .swiper-wrapper .process .process_wrap .process_sequence li .num::after {bottom:10px; height:70%;}
     /* ------------------------------------------- 5-1. 개별디자인 */
     .main_slide .swiper-wrapper .process .process_sequence li:nth-child(1) .num {color:#86BCFE;}
@@ -66,8 +72,9 @@
     .main_slide .swiper-wrapper .process .process_sequence li:nth-child(5) .num {color:#FFB5C2;}
     .main_slide .swiper-wrapper .process .process_sequence li:nth-child(5) .num::after {background-color:#FFB5C2;}
     /* 6행-프로젝트 목차 */
-    .main_slide .swiper-wrapper #project {max-width:100%; padding:10% 60px 0;}
-    .main_slide .swiper-wrapper #project .project_wrap .project_list li {height:500px;}
+    .main_slide .swiper-wrapper #project {max-width:100%; padding:3% 60px 0; display:flex; flex-flow:column nowrap; justify-content:center; align-items:center;}
+    .main_slide .swiper-wrapper #project .project_wrap .project_list {width:90vw;}
+    .main_slide .swiper-wrapper #project .project_wrap .project_list li {height:70vh;}
     /* 7행-오롤리데이 리디자인 */
     .main_slide .swiper-wrapper #lolly_redesign {max-width:100%; padding:0 60px 0 0; gap:60px;}
     .main_slide .swiper-wrapper #lolly_redesign .lolly_website_img {width:900px; height:100%; display:flex; justify-content:center; align-items:center;}
@@ -84,6 +91,10 @@
     .main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_plan .plan_info {margin-bottom:35px;}
     /* 7-1-4. 사용한 툴, 스킬 */
     .main_slide .swiper-wrapper #lolly_redesign .lolly_info .lolly_make_tools .tool_list {margin-bottom:35px;}
+    /* 7-1-5. 프로젝트 링크 */
+    /* .main_slide .swiper-wrapper #lolly_redesign .lolly_info .veiw_link .link_wrap {display:flex; flex-flow:row wrap; gap:10px; align-items:center; margin-bottom:12px;} */
+    .main_slide .swiper-wrapper #lolly_redesign .lolly_info .veiw_link .link_wrap li .btn_link {padding:8px 10px;}
+    .main_slide .swiper-wrapper #lolly_redesign .lolly_info .veiw_link .link_wrap li .btn_link img {width:24px;}
     /* 8행-TS 트릴리온 리디자인 */
     .main_slide .swiper-wrapper .ts_redesign {max-width:100%; padding:0 0 0 60px; gap:60px;}
     /* 8-1. 왼쪽 TS 트릴리온 정보 */

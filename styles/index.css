@@ -1,6 +1,6 @@
 /* index.css */
 html {scroll-behavior:smooth;}
-.swiper {height:100vh; width:100%; position:relative;}
+.swiper {height:100vh; width:100vw; position:relative;}
 .main_slide .swiper-wrapper {}
 .main_slide > .swiper-wrapper > .swiper-slide {
     max-width:var(--width-desk-v1);
@@ -280,6 +280,7 @@ html {scroll-behavior:smooth;}
     font-size:0.75em;
     font-weight:300;
     line-height:1.4;
+    word-break: keep-all;
 }
 /* ------------------------------------------- 4-1. 피그마 */
 .main_slide .swiper-wrapper #skill .skill_wrap .figma dt .icon_figma {background-image:url(../images/figma_icon.svg);}
@@ -295,7 +296,7 @@ html {scroll-behavior:smooth;}
 .main_slide .swiper-wrapper .process {
     /* background-image:url(../images/process_bg.jpg); */
     background:linear-gradient(135deg, #FCD9DF, #CFE0F8);
-    padding:426px 0 230px;
+    padding:23% 0 0;
     position:relative;
 }
 .main_slide .swiper-wrapper .process .process_wrap {padding:0 120px;}
