@@ -569,6 +569,7 @@ html {scroll-behavior:smooth;}
 .main_slide .swiper-wrapper .ts_redesign .ts_info .veiw_link h4 {font-size:1.125em; margin-bottom:6px;}
 .main_slide .swiper-wrapper .ts_redesign .ts_info .veiw_link .link_wrap {display:flex; flex-flow:row wrap; gap:10px; align-items:center; margin-bottom:12px;}
 .main_slide .swiper-wrapper .ts_redesign .ts_info .veiw_link .link_wrap li {}
+.main_slide .swiper-wrapper .ts_redesign .ts_info .veiw_link .link_wrap li:nth-child(1) {display:none;}
 .main_slide .swiper-wrapper .ts_redesign .ts_info .veiw_link .link_wrap li .btn_link {
     display:flex; align-items:center; gap:10px; padding:14px 20px;
     background-color:#fff; border:1px solid rgb(0, 0, 0, 0.5); border-radius:10px;
