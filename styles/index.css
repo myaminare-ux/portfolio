@@ -694,6 +694,7 @@ html {scroll-behavior:smooth;}
 .main_slide .swiper-wrapper #graphic .graphic_design .swiper-wrapper .design3 {background-color:#A9DFBF;}
 .main_slide .swiper-wrapper #graphic .graphic_design .swiper-wrapper .design4 {background-color:#F9E79F;}
 .main_slide .swiper-wrapper #graphic .graphic_design .swiper-wrapper .design5 {background-color:#D7BDE2;}
+.main_slide .swiper-wrapper #graphic .graphic_design .swiper-wrapper .design6 {background-color:#FFB5C2;}
 /* ------------------------ 이미지 클릭 시 큰 이미지 팝업 등장 */
 .big_img_popup {
     background-color:rgb(0, 0, 0, 0.5);
