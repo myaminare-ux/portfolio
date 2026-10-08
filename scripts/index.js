@@ -73,14 +73,22 @@ bigImgPopup.addEventListener('click', (e) => {
 });
 
 // top 버튼 클릭 시 슬라이드 1번으로 이동
-const topBtn = document.querySelector('.top_btn');
+/* const topBtn = document.querySelector('.top_btn');
 
 topBtn.addEventListener('click', (e)=>{
     e.preventDefault();
     mainSlide.slideTo(0,500);
-});
+}); */
 
 // top menu 클릭 시 해당 슬라이드 이동
+const topMenuBtn = document.querySelector('.top_menu_btn');
+const topBtn = document.querySelector('.top_btn');
+topBtn.addEventListener('click', (e)=>{
+    e.preventDefault();
+    topMenuBtn.classList.toggle('hide');
+})
+
+
 const aboutMe = document.querySelector('.tab1');
 const ProjectAll = document.querySelector('.tab2');
 const PjWeb = document.querySelector('.tab3');
