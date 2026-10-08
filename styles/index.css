@@ -741,9 +741,32 @@ html {scroll-behavior:smooth;}
 .main_slide .swiper-wrapper .finish .email_githubLink .email_github_btn .email_btn {}
 .main_slide .swiper-wrapper .finish .email_githubLink .email_github_btn .github_link {}
 /* ------------------------ TOP 버튼 디자인 */
-.top_btn {
+/* .top_btn {
     position:fixed;
     right:95px; bottom:90px; z-index:999;
+    background-image:url(../images/top_btn.png);
+    background-size:cover;
+    background-position:center;
+    width:50px; height:50px;
+} */
+.top_menu_btn {position:fixed; right:95px; bottom:90px; z-index:999;}
+.top_menu_btn .content_menu {
+    /* display:none; */
+    opacity:0;
+    position:absolute;
+    right:0; bottom:100%;
+    padding-bottom: 20px;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+.top_menu_btn:hover .content_menu {/* display:block; */ opacity:1; visibility: visible;
+    transform: translateY(0);}
+.top_menu_btn .content_menu li {padding:15px; background-color:#000; border-radius:30px; white-space: nowrap; margin-bottom:10px; text-align:center;}
+.top_menu_btn .content_menu li:last-child {margin-bottom:0;}
+.top_menu_btn .content_menu li a {color:#fff;}
+.top_menu_btn .top_btn {
+    display:block;
     background-image:url(../images/top_btn.png);
     background-size:cover;
     background-position:center;

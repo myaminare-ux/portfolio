@@ -6,15 +6,15 @@ const mainSlide = new Swiper('.main_slide',{
     mousewheel:true,
 });
 
-const aboutMe = document.querySelector('.introduce_btn');
+/* const aboutMe = document.querySelector('.introduce_btn');
 const skill = document.querySelector('.skill_btn');
-const project = document.querySelector('.project_btn');
+const project = document.querySelector('.project_btn'); */
 const projCard1 = document.querySelector('.card_1');
 const projCard2 = document.querySelector('.card_2');
 const projCard3 = document.querySelector('.card_3');
-console.log(aboutMe, skill, project, projCard1, projCard2, projCard3);
+console.log(projCard1, projCard2, projCard3);
 
-aboutMe.addEventListener('click', (e)=>{
+/* aboutMe.addEventListener('click', (e)=>{
     e.preventDefault();
     mainSlide.slideTo(2, 400);
 })
@@ -25,7 +25,7 @@ skill.addEventListener('click', (e)=>{
 project.addEventListener('click', (e)=>{
     e.preventDefault();
     mainSlide.slideTo(5, 400);
-})
+}) */
 
 projCard1.addEventListener('click', (e)=>{
     e.preventDefault();
@@ -79,3 +79,31 @@ topBtn.addEventListener('click', (e)=>{
     e.preventDefault();
     mainSlide.slideTo(0,500);
 });
+
+// top menu 클릭 시 해당 슬라이드 이동
+const aboutMe = document.querySelector('.tab1');
+const ProjectAll = document.querySelector('.tab2');
+const PjWeb = document.querySelector('.tab3');
+const PjUiux = document.querySelector('.tab4');
+const PjGraphic = document.querySelector('.tab5');
+
+aboutMe.addEventListener('click', (e)=>{
+    e.preventDefault();
+    mainSlide.slideTo(1,500);
+})
+ProjectAll.addEventListener('click', (e)=>{
+    e.preventDefault();
+    mainSlide.slideTo(3,500);
+})
+PjWeb.addEventListener('click', (e)=>{
+    e.preventDefault();
+    mainSlide.slideTo(5,500);
+})
+PjUiux.addEventListener('click', (e)=>{
+    e.preventDefault();
+    mainSlide.slideTo(7,500);
+})
+PjGraphic.addEventListener('click', (e)=>{
+    e.preventDefault();
+    mainSlide.slideTo(8,500);
+})
