@@ -56,15 +56,37 @@ const subSlide = new Swiper('.graphic_design',{
 // 10행 이미지 클릭 시 큰이미지 팝업
 const bigImgPopup = document.querySelector('#bigImg_popup');
 const bigDesign = document.querySelector('#bigDesign');
-const popupImg = document.querySelectorAll('.js_popup_img');
+const popBox = document.querySelector('.pop_box');
+// const popupImg = document.querySelectorAll('.js_popup_img');
 
-popupImg.forEach((img) => {
-    img.addEventListener('click', () => {
-        bigImgPopup.classList.add('active');
-        bigDesign.src = img.src;
-        bigDesign.alt = img.alt;
+// popupImgs.forEach(img => {
+//     img.addEventListener('click', function() {
+//         const imgSrc = this.getAttribute('src');
+        
+//         bigDesignImg.setAttribute('src', imgSrc);
+//         bigImgPopup.classList.add('active');
+        
+//         // 팝업이 열릴 때 스크롤 위치를 맨 위로 초기화
+//         if (popBox) popBox.scrollTop = 0;
+//     });
+// });
+
+const graphicDesignWrap = document.querySelector('.graphic_design');
+
+if (graphicDesignWrap) {
+    graphicDesignWrap.addEventListener('click', (e) => {
+        // 클릭한 요소가 js_popup_img 클래스를 가진 이미지인지 확인
+        if (e.target.classList.contains('js_popup_img')) {
+            const imgSrc = e.target.getAttribute('src');
+            
+            bigDesign.setAttribute('src', imgSrc);
+            bigImgPopup.classList.add('active');
+            
+            // 팝업 스크롤 상단 초기화
+            if (popBox) popBox.scrollTop = 0;
+        }
     });
-});
+}
 
 bigImgPopup.addEventListener('click', (e) => {
     if (e.target === bigImgPopup) {
@@ -83,6 +105,7 @@ topBtn.addEventListener('click', (e)=>{
 // top menu 클릭 시 해당 슬라이드 이동
 const topMenuBtn = document.querySelector('.top_menu_btn');
 const topBtn = document.querySelector('.top_btn');
+
 topBtn.addEventListener('click', (e)=>{
     e.preventDefault();
     topMenuBtn.classList.toggle('hide');
